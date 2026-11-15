@@ -1,0 +1,6 @@
+﻿=== modules/chrome/extensionBridge.ts size/head ===
+Length=77
+export * from '../../features/environments/chrome-new-tab/extensionBridge';
+
+=== features/chrome-new-tab/extensionBridge.ts: useExtensionBridge? ===
+

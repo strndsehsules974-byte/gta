@@ -1,0 +1,15 @@
+﻿src/features/environments/windows-11-customizer/components/TargetWorkspaces/windows/WindowsCustomizationSidebar.tsx(35,52): error TS2305: Module '"./types"' has no exported member 'DEFAULT_DESKTOP_ICONS'.
+src/features/environments/windows-11-customizer/components/TargetWorkspaces/windows/WindowsDesktopCanvas.tsx(3,10): error TS2459: Module '"./types"' declares 'Wallpaper' locally, but it is not exported.
+src/features/environments/windows-11-customizer/components/TargetWorkspaces/windows/WindowsDesktopCanvas.tsx(4,10): error TS2305: Module '"./types"' has no exported member 'WindowsEnvironmentConfig'.
+src/features/environments/windows-11-customizer/components/TargetWorkspaces/windows/WindowsTaskbar.tsx(3,10): error TS2305: Module '"./types"' has no exported member 'WindowsEnvironmentConfig'.
+src/features/environments/windows-11-customizer/components/TargetWorkspaces/windows/WindowsTopSystemBar.tsx(2,10): error TS2305: Module '"./types"' has no exported member 'WindowsEnvironmentConfig'.
+src/features/environments/windows-11-customizer/components/TargetWorkspaces/windows/WindowsTopSystemBar.tsx(3,24): error TS2307: Cannot find module '../../topbar/TopBar' or its corresponding type declarations.
+src/features/environments/windows-11-customizer/components/TargetWorkspaces/windows/WindowsTrayFlyouts.tsx(2,32): error TS2307: Cannot find module '../../../../../components/common/WallpaperThumb' or its corresponding type declarations.
+src/features/environments/windows-11-customizer/components/TargetWorkspaces/windows/WindowsTrayFlyouts.tsx(26,10): error TS2459: Module '"./types"' declares 'Wallpaper' locally, but it is not exported.
+src/features/environments/windows-11-customizer/desktop/shell/DesktopShellSurfaceController.tsx(145,15): error TS2322: Type '{ key: string; onClose: () => void; onOpenSettings: () => void; }' is not assignable to type 'IntrinsicAttributes & WindowsNetworkShellSurfaceProps'.
+  Property 'onClose' does not exist on type 'IntrinsicAttributes & WindowsNetworkShellSurfaceProps'.
+src/features/environments/windows-11-customizer/desktop/shell/DesktopShellSurfaceController.tsx(203,15): error TS2322: Type '{ key: string; onClose: () => void; onOpenApp: (appId: string) => void; onOpenSettings: () => void; onOpenNetworkFlyout: () => void; }' is not assignable to type 'IntrinsicAttributes & WindowsActionCenterShellSurfaceProps'.
+  Property 'onClose' does not exist on type 'IntrinsicAttributes & WindowsActionCenterShellSurfaceProps'.
+src/features/environments/windows-11-customizer/desktop/shell/LiquidGlassShellContainer.tsx(3,57): error TS2307: Cannot find module '../../../../..modulesdesktopadaptive' or its corresponding type declarations.
+src/features/environments/windows-11-customizer/desktop/shell/WindowsActionCenterShellSurface.tsx(2,75): error TS2307: Cannot find module '../../../components/topbar/actionCenter/WindowsActionCenterFlyout' or its corresponding type declarations.
+src/features/environments/windows-11-customizer/desktop/shell/WindowsAudioShellSurface.tsx(3,52): error TS2307: Cannot find module '../../../services/systemBridge' or its corresponding type declarations.

@@ -1,0 +1,7 @@
+﻿git : fatal: path 'src/hooks/useChromeBridge.tsx' exists on disk, but not in 'HEAD'
+At line:1 char:182
++ ... oding utf8; git --no-pager show HEAD:src/hooks/useChromeBridge.tsx 2> ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (fatal: path 'sr...t not in 'HEAD':String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 

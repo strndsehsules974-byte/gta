@@ -1,0 +1,33 @@
+PIN 1147573617491110899 status=200 final=https://www.pinterest.com/pin/1147573617491110899/ len=1173644
+  title: 
+  og:image: prop-first=[] content-first=[]
+  og:video: prop-first=[] content-first=[]
+  og:video:secure_url: prop-first=[] content-first=[]
+  og:title: prop-first=[] content-first=[]
+  AGENT video regex -> None
+  first mp4/m3u8 in html -> None
+  'Log in to see more' present: False
+  'Log in' in title: False
+PIN 1147573617491108562 status=200 final=https://www.pinterest.com/pin/1147573617491108562/ len=1381781
+  title: 
+  og:image: prop-first=[] content-first=[]
+  og:video: prop-first=[] content-first=[]
+  og:video:secure_url: prop-first=[] content-first=[]
+  og:title: prop-first=[] content-first=[]
+  AGENT video regex -> None
+  first mp4/m3u8 in html -> None
+  'Log in to see more' present: False
+  'Log in' in title: False
+PIN 1147573686208243203 status=200 final=https://www.pinterest.com/pin/1147573686208243203/ len=1174184
+  title: 
+  og:image: prop-first=[] content-first=[]
+  og:video: prop-first=[] content-first=[]
+  og:video:secure_url: prop-first=[] content-first=[]
+  og:title: prop-first=[] content-first=[]
+  AGENT video regex -> None
+  first mp4/m3u8 in html -> None
+  'Log in to see more' present: False
+  'Log in' in title: False
+=== BOARD status=200 len=1242039 ===
+CONTEXT: null,"description":"","board_vase":null,"board_order_modified_at":"Fri, 16 Oct 2026 07:26:34 +0000","id":"1147573617491108562","is_collaborative":false,"created_at":"Tue, 13 Oct 2026 03:56:05 +0000","allow_homefeed_recommendations":true,"collaborator_count":0,"seo_related_seasonal_interests":null,"archived_by_me_at":null,"access":[],"cover_images":{"200x150":{"url":"https:/
+board mp4/m3u8 urls (first 5): []

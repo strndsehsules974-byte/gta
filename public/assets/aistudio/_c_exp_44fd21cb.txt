@@ -1,0 +1,95 @@
+﻿=== modules/desktop exists? ===
+src\modules\desktop\adaptive\AdaptiveMaterialEngine.ts
+src\modules\desktop\adaptive\AdaptiveMaterialProvider.tsx
+src\modules\desktop\adaptive\adaptiveMaterialSmoothing.ts
+src\modules\desktop\adaptive\adaptiveMaterialTokens.ts
+src\modules\desktop\adaptive\adaptiveMaterialTypes.ts
+src\modules\desktop\adaptive\adaptiveMaterialUtils.ts
+src\modules\desktop\adaptive\index.ts
+src\modules\desktop\adaptive\useAdaptiveMaterial.ts
+src\modules\desktop\adaptive\WallpaperAnalysisCache.ts
+src\modules\desktop\adaptive\wallpaperAnalysisTypes.ts
+src\modules\desktop\adaptive\WallpaperAnalyzer.ts
+=== components/common ===
+LivePreviewErrorBoundary.tsx
+RuntimeSyncIndicator.tsx
+WallpaperMedia.tsx
+WallpaperThumb.tsx
+=== current chrome extensionBridge exports ===
+12: export const STORAGE_KEY = 'wallix_chrome_newtab_settings';
+13: export const SHORTCUTS_KEY = 'wallix_chrome_newtab_shortcuts';
+21: export function isBridgeableWallpaperUrl(url: unknown): boolean {
+30: export const BRIDGE_FALLBACK_WALLPAPER_URL =
+33: export interface ExtensionBridgeStatus {
+51: export async function saveChromeSettings(
+109: export function loadSavedChromeSettings(): {
+128: export function initExtensionConnectionListener(
+170: export function resolveSafeWallpaperUrl(url?: string): string {
+327: export const DEFAULT_CUSTOMIZER_MATCHES = ["http://localhost/*", "https://localhost/*"];
+333: export async function generateManifestV3Package(
+2163: export function generateStandaloneNewTabHtml(
+=== HEAD src/modules/chrome/extensionBridge exports ===
+export const STORAGE_KEY = 'wallix_chrome_newtab_settings';
+export const SHORTCUTS_KEY = 'wallix_chrome_newtab_shortcuts';
+export interface ExtensionBridgeStatus {
+export async function saveChromeSettings(
+export function loadSavedChromeSettings(): {
+export function initExtensionConnectionListener(
+export function resolveSafeWallpaperUrl(url?: string): string {
+export async function generateManifestV3Package(
+export function generateStandaloneNewTabHtml(
+=== HEAD src/modules/chrome/types exports ===
+export const SCHEMA_VERSION = 1;
+export type SearchStyle = 'pill' | 'rounded' | 'minimal';
+export type SearchSize = 'compact' | 'standard' | 'spacious';
+export type SearchPosition = 'center' | 'top';
+export type SearchEngine = 'google' | 'gemini' | 'duckduckgo' | 'bing';
+export type ShortcutStyle = 'glass-card' | 'glass-pill' | 'minimal-icon' | 'solid';
+export type ShortcutSpacing = 'tight' | 'normal' | 'loose';
+export type ThemeAccent = 'cyan' | 'purple' | 'blue' | 'emerald' | 'amber' | 'rose';
+export interface ChromeShortcut {
+export type WallpaperFit = 'cover' | 'fill' | 'center';
+export interface ChromeNewTabSettings {
+export type LayoutPreset = 
+export type LayoutElementId = 'search' | 'dock' | 'weather' | 'topRight';
+export interface ElementLayout {
+export type ElementPosition = ElementLayout; // Backward compatibility alias
+export interface ChromeLayoutSettings {
+export const LAYOUT_ELEMENT_METAS: Record<LayoutElementId, { label: string; minWidth: number; minHeight: number; defaultWidth?: number }> = {
+export const LAYOUT_SAFE_BOUNDS: Record<LayoutElementId, { minX: number; maxX: number; minY: number; maxY: number; label: string }> = {
+export const DEFAULT_LAYOUT_SETTINGS: ChromeLayoutSettings = {
+export const DEFAULT_CHROME_SETTINGS: ChromeNewTabSettings = {
+export function clamp(val: unknown, min: number, max: number, fallback: number): number {
+export function sanitizeChromeSettings(raw: any): ChromeNewTabSettings {
+export function sanitizeChromeShortcuts(rawList: any): ChromeShortcut[] {
+export const INITIAL_CHROME_SHORTCUTS: ChromeShortcut[] = [
+export function getDomainFromUrl(url: string): string {
+export function getFaviconUrl(url: string): string {
+=== current chrome-new-tab/types exports ===
+3: export const SCHEMA_VERSION = 1;
+5: export type SearchStyle = 'pill' | 'rounded' | 'minimal';
+6: export type SearchSize = 'compact' | 'standard' | 'spacious';
+7: export type SearchPosition = 'center' | 'top';
+8: export type SearchEngine = 'google' | 'gemini' | 'duckduckgo' | 'bing';
+9: export type ShortcutStyle = 'glass-card' | 'glass-pill' | 'minimal-icon' | 'solid';
+10: export type ShortcutSpacing = 'tight' | 'normal' | 'loose';
+11: export type ThemeAccent = 'cyan' | 'purple' | 'blue' | 'emerald' | 'amber' | 'rose';
+13: export interface ChromeShortcut {
+24: export type WallpaperFit = 'cover' | 'fill' | 'center';
+26: export interface ChromeNewTabSettings {
+79: export type LayoutPreset =
+85: export type LayoutElementId = 'search' | 'dock' | 'weather' | 'topRight';
+87: export interface ElementLayout {
+96: export type ElementPosition = ElementLayout; // Backward compatibility alias
+98: export interface ChromeLayoutSettings {
+106: export const LAYOUT_ELEMENT_METAS: Record<LayoutElementId, { label: string; minWidth: number; minHeight: number; defaultWidth?: number }> = {
+114: export const LAYOUT_SAFE_BOUNDS: Record<LayoutElementId, { minX: number; maxX: number; minY: number; maxY: number; label: string }> = {
+121: export const DEFAULT_LAYOUT_SETTINGS: ChromeLayoutSettings = {
+129: export const DEFAULT_CHROME_SETTINGS: ChromeNewTabSettings = {
+190: export function clamp(val: unknown, min: number, max: number, fallback: number): number {
+199: export function sanitizeChromeSettings(raw: any): ChromeNewTabSettings {
+339: export function sanitizeChromeShortcuts(rawList: any): ChromeShortcut[] {
+369: export const INITIAL_CHROME_SHORTCUTS: ChromeShortcut[] = MOCK_TOP_SITES.map((site) => ({
+379: export function getDomainFromUrl(url: string): string {
+388: export function getFaviconUrl(url: string): string {
+

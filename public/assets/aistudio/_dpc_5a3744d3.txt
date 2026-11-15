@@ -1,0 +1,62 @@
+﻿    ? {
+        ...selectedSubject,
+        cutoutUrl: customCutoutUrl,
+        name: 'Custom PNG Cutout',
+      }
+    : selectedSubject;
+
+  return (
+    <div
+      ref={containerRef}
+      onMouseMove={handleMouseMove}
+      onMouseLeave={handleMouseLeave}
+      className={`relative w-full h-full overflow-hidden select-none bg-black ${className}`}
+      style={{ perspective: '1000px' }}
+    >
+      {/* ========================================================================= */}
+      {/* LAYER 0: BACKGROUND (Video / WebGL / High-Res Image) */}
+      {/* ========================================================================= */}
+      <div
+        className="absolute inset-0 z-0 pointer-events-none transition-transform will-change-transform"
+        style={{
+          transform: `translate3d(${bgOffsetX}px, ${bgOffsetY}px, 0px) scale(${bgScale})`,
+          transformOrigin: 'center center',
+        }}
+      >
+        {wallpaper.isModel3D && wallpaper.modelUrl ? (
+          <Model3DViewer modelUrl={wallpaper.modelUrl} autoRotate={!isPaused} className="w-full h-full" />
+        ) : depthMedia.kind === 'video' ? (
+          <WallpaperMedia
+            wallpaper={wallpaper}
+            media={depthMedia}
+            alt={wallpaper.title}
+            autoPlay
+            loop
+            muted
+            playsInline
+            preload="metadata"
+            paused={isPaused}
+            className="w-full h-full object-cover"
+          />
+        ) : wallpaper.isLive && wallpaper.shaderType ? (
+          <ThreeLiveWallpaper 
+            shaderType={wallpaper.shaderType} 
+            interactive={false} 
+            isPaused={isPaused}
+            className="w-full h-full" 
+          />
+        ) : (
+          <WallpaperMedia
+            wallpaper={wallpaper}
+            media={depthMedia}
+            alt={wallpaper.title}
+            autoPlay={false}
+            preload="metadata"
+            className="w-full h-full object-cover"
+          />
+        )}
+        
+        {/* Soft Vignette and Atmospheric Depth Gradient */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/40 pointer-events-none" />
+      </div>
+

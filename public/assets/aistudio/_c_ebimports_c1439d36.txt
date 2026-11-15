@@ -1,0 +1,5 @@
+﻿src\components\TargetSelection\TargetCard.tsx :: import { loadSavedChromeSettings } from '../../modules/chrome/extensionBridge';
+src\components\ChromeExtensionStudioView.tsx :: import { saveChromeSettings, generateManifestV3Package, resolveSafeWallpaperUrl, initExtensionConnectionListener, ExtensionBridgeStatus } from '../modules/chrome/extensionBridge';
+src\hooks\useChromeBridge.tsx :: } from '../modules/chrome/extensionBridge';
+src\modules\chrome\extensionBridge.ts :: export * from '../../features/environments/chrome-new-tab/extensionBridge';
+src\newtab\main.tsx :: } from '../modules/chrome/extensionBridge';

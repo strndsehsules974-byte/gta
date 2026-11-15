@@ -1,0 +1,13 @@
+﻿12: export const STORAGE_KEY = 'wallix_chrome_newtab_settings';
+13: export const SHORTCUTS_KEY = 'wallix_chrome_newtab_shortcuts';
+21: export function isBridgeableWallpaperUrl(url: unknown): boolean {
+30: export const BRIDGE_FALLBACK_WALLPAPER_URL =
+33: export interface ExtensionBridgeStatus {
+51: export async function saveChromeSettings(
+109: export function loadSavedChromeSettings(): {
+128: export function initExtensionConnectionListener(
+170: export function resolveSafeWallpaperUrl(url?: string): string {
+327: export const DEFAULT_CUSTOMIZER_MATCHES = ["http://localhost/*", "https://localhost/*"];
+333: export async function generateManifestV3Package(
+2163: export function generateStandaloneNewTabHtml(
+1: export * from '../../features/environments/chrome-new-tab/extensionBridge';

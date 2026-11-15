@@ -1,0 +1,39 @@
+﻿12: export const STORAGE_KEY = 'wallix_chrome_newtab_settings';
+13: export const SHORTCUTS_KEY = 'wallix_chrome_newtab_shortcuts';
+74: localStorage.setItem('wallix_chrome_last_synced', payload.updatedAt);
+80: wallix_extension_active: true,
+81: wallix_last_synced: payload.updatedAt,
+89: type: 'WALLIX_SYNC_SETTINGS',
+138: if (event.data.type === 'WALLIX_EXTENSION_READY') {
+144: } else if (event.data.type === 'WALLIX_EXTENSION_SAVED_ACK') {
+157: window.postMessage({ type: 'WALLIX_PING_EXTENSION' }, safeOrigin);
+325: * at build time via the WALLIX_EXTENSION_ORIGINS env var (comma-separated)
+357: // WALLIX_EXTENSION_ORIGINS at build time) instead of widening to *://*/*.
+474: if (event.data.type === "WALLIX_SYNC_SETTINGS") {
+485: wallix_chrome_newtab_settings: sanitized,
+486: wallix_extension_active: true,
+487: wallix_last_synced: sanitized.updatedAt
+491: type: "WALLIX_EXTENSION_SAVED_ACK",
+500: if (event.data.type === "WALLIX_PING_EXTENSION") {
+502: type: "WALLIX_EXTENSION_READY",
+513: chrome.storage.local.get(["wallix_chrome_newtab_settings"], (result) => {
+515: type: "WALLIX_EXTENSION_READY",
+519: hasSavedSettings: !!result.wallix_chrome_newtab_settings,
+535: chrome.runtime.onInstalled.addListener(() => {
+539: chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
+540: if (message && message.type === "WALLIX_OPEN_CUSTOMIZE_PANEL") {
+1812: wallix_chrome_newtab_settings: newCfg,
+1813: wallix_last_synced: new Date().toISOString()
+1817: localStorage.setItem('wallix_chrome_newtab_settings', JSON.stringify(newCfg));
+1924: chrome.storage.local.get("wallix_chrome_newtab_settings", (data) => {
+1925: if (data && data.wallix_chrome_newtab_settings) {
+1926: activeConfig = data.wallix_chrome_newtab_settings;
+1936: if (areaName === 'local' && changes.wallix_chrome_newtab_settings) {
+1938: activeConfig = changes.wallix_chrome_newtab_settings.newValue;
+1945: const local = localStorage.getItem("wallix_chrome_newtab_settings");
+2049: if (typeof chrome !== 'undefined' && chrome.runtime?.sendMessage) {
+2050: chrome.runtime.sendMessage({ type: 'WALLIX_OPEN_CUSTOMIZE_PANEL' }, (res) => {
+2051: if (chrome.runtime.lastError) {
+2052: console.warn('[WALLIX] Runtime message error:', chrome.runtime.lastError);
+2105: chrome.tabs.create({ url: "${typeof window !== 'undefined' ? window.location.origin : 'https://aistudio.google.com'}" });
+2108: chrome.tabs.reload();

@@ -1,0 +1,33 @@
+﻿
+  src\App.tsx:5:import { Wallpaper, NavTab, PlatformOS, ResolutionType, 
+AppSettings, DownloadHistoryItem, CollectionFolder, CommunityPreset, 
+WallpaperSubTab } from './types';
+  src\App.tsx:6:import { Sidebar } from './components/Sidebar';
+  src\App.tsx:7:import { Navbar } from './components/Navbar';
+> src\App.tsx:8:import { HeroCarousel } from './components/HeroCarousel';
+  src\App.tsx:9:import { WallpaperGrid } from './components/WallpaperGrid';
+  src\App.tsx:10:import { WallpaperModal } from './components/WallpaperModal';
+  src\App.tsx:11:import { DesktopSimulatorModal } from 
+'./components/DesktopSimulatorModal';
+  src\App.tsx:12:import { AIStudioModal } from './components/AIStudioModal';
+  src\App.tsx:13:import { SettingsModal } from './components/SettingsModal';
+  src\App.tsx:14:import { CategoriesView } from './components/CategoriesView';
+  src\App.tsx:17:import { DownloadsView } from './components/DownloadsView';
+  src\App.tsx:18:import { CollectionsView } from './components/CollectionsView';
+  src\App.tsx:19:import { AddToCollectionModal } from 
+'./components/AddToCollectionModal';
+> src\App.tsx:20:import { ArcCarouselLanding } from 
+'./components/ArcCarouselLanding';
+  src\App.tsx:21:import { PublishPresetModal } from 
+'./components/PublishPresetModal';
+  src\App.tsx:22:import { PresetApplyModal } from './components/PresetApplyModal';
+  src\App.tsx:23:import { ChromeExtensionModal } from 
+'./components/ChromeExtensionModal';
+  src\App.tsx:24:import { ChromeExtensionStudioView } from 
+'./components/ChromeExtensionStudioView';
+  src\App.tsx:25:import { HomeDashboardView } from 
+'./components/HomeDashboardView';
+  src\App.tsx:26:import { LiveWallpaperStudioView } from 
+'./components/LiveWallpaperStudioView';
+
+

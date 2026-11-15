@@ -1,0 +1,51 @@
+=== baseline-tsc.txt ===
+=== fix-lint.txt ===
+
+> react-example@0.0.0 lint
+> tsc --noEmit
+
+=== wallix-code p1.txt head ===
+[1/3] From Klickpin.com- Beautiful Date Night Outfit Ideas for a Cozy Vibe-pin-id-1147573548830263468.mp4 â€¦ REJECTED [BELOW_4K]
+[2/3] From Klickpin.com- Beautiful Date Night Outfit Ideas for a Cozy Vibe-pin-id-1147573548830264040.mp4 â€¦ REJECTED [VERTICAL_VIDEO, INVALID_ASPECT_RATIO]
+[3/3] video_5398c816062f.mp4 â€¦ REJECTED [BELOW_4K]
+
+[Validate] Summary
+  TOTAL          : 3
+  APPROVED       : 0
+  REJECTED       : 3
+  DUPLICATES     : 0
+  WATERMARKS     : 0
+  VERTICAL       : 1
+  BELOW 4K       : 2
+  CORRUPTED      : 0
+  BLACK INTRO    : 0
+  BLACK OUTRO    : 0
+  BAD THUMBNAIL  : 0
+  ANALYSIS ERROR : 0
+=== pkg scripts ===
+
+
+dev                 : cross-env NODE_OPTIONS="--max-old-space-size=4096" tsx server.ts
+dev:mem             : node --max-old-space-size=4096 -r tsx/register server.ts
+build               : vite build && esbuild server.ts --bundle --platform=node --format=esm --packages=external --sourcemap --outfile=dist/server.mjs
+start               : node dist/server.mjs
+preview             : vite preview
+clean               : rm -rf dist server.js
+lint                : tsc --noEmit
+test                : vitest run
+test:watch          : vitest
+test:coverage       : vitest run --coverage
+validate:scan       : tsx validate.ts scan
+validate            : tsx validate.ts validate
+validate:dry        : tsx validate.ts validate --dry-run
+validate:quarantine : tsx validate.ts quarantine
+validate:approve    : tsx validate.ts approve
+validate:audit      : tsx validate.ts audit
+validate:report     : tsx validate.ts report
+wallpapers:scan     : tsx upload.js --dry-run
+wallpapers:collect  : tsx upload.js --copy-only
+wallpapers:upload   : tsx upload.js
+
+
+
+

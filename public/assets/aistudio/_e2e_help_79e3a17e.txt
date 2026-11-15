@@ -1,0 +1,25 @@
+﻿usage: smart_pinterest_agent.py [-h] [--max-pins MAX_PINS] [--scrolls SCROLLS]
+                                [--download] [--sync-supabase] [--notify]
+                                [--watch] [--interval INTERVAL] [--login]
+                                [--login-timeout LOGIN_TIMEOUT]
+
+Smart Self-Learning Pinterest Watcher Pipeline (Wallix)
+
+options:
+  -h, --help            show this help message and exit
+  --max-pins MAX_PINS   max NEW pins to process per board (default 5)
+  --scrolls SCROLLS     scroll iterations for the headless fallback (default
+                        3)
+  --download            download best-quality videos into downloads/ via yt-
+                        dlp
+  --sync-supabase       push video metadata straight to Supabase
+  --notify              also POST each item to receiver_agent.py (port 5000)
+  --watch               auto-watch mode: keep re-checking boards
+  --interval INTERVAL   seconds between auto-watch checks (default 600 = 10
+                        min)
+  --login               open the persistent browser for a MANUAL login (10-15
+                        min)
+  --login-timeout LOGIN_TIMEOUT
+                        seconds to keep the browser open for login (default
+                        900 = 15 min)
+

@@ -1,0 +1,9 @@
+﻿
+Name                         Length
+----                         ------
+build-extension.mjs            5729
+build-extension.ts             3299
+generate-extension-icons.mjs   4122
+generate-icons.py              2676
+
+

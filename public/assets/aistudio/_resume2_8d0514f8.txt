@@ -1,0 +1,63 @@
+=== verify-vitest-postfix tail ===
+ [32mâœ“[39m tests/validation.test.ts[2m > [22mAspect Ratio Validation[2m > [22mshould INVALID for 1:1 square[32m 0[2mms[22m[39m
+ [32mâœ“[39m tests/validation.test.ts[2m > [22mAspect Ratio Validation[2m > [22mshould INVALID for 9:16 portrait[32m 0[2mms[22m[39m
+ [32mâœ“[39m tests/validation.test.ts[2m > [22mAspect Ratio Validation[2m > [22mshould handle zero height[32m 0[2mms[22m[39m
+ [32mâœ“[39m tests/validation.test.ts[2m > [22mGallery Deduplication[2m > [22mshould remove duplicate by stable ID[32m 4[2mms[22m[39m
+ [32mâœ“[39m tests/validation.test.ts[2m > [22mGallery Deduplication[2m > [22mshould remove duplicate by content URL[32m 0[2mms[22m[39m
+ [32mâœ“[39m tests/validation.test.ts[2m > [22mGallery Deduplication[2m > [22mshould filter out wallpapers without valid media[32m 0[2mms[22m[39m
+ [32mâœ“[39m tests/validation.test.ts[2m > [22mGallery Deduplication[2m > [22mshould filter out wallpapers without thumbnail[32m 0[2mms[22m[39m
+
+[2m Test Files [22m [1m[32m2 passed[39m[22m[90m (2)[39m
+[2m      Tests [22m [1m[32m67 passed[39m[22m[90m (67)[39m
+[2m   Start at [22m 08:56:07
+[2m   Duration [22m 416.83s[2m (tests 100%)[22m
+
+EXITCODE=0 
+DONE 05-10-2026  9:03:04.47 
+=== wallix-code git log ===
+8f9eb3d WALLIX: automatic media quality gate (Phase 1-3)
+b476ed6 feat: implement chrome new tab extension architecture
+e5a8201 Initial commit
+=== wallix-code status ===
+ M p1.txt
+ M package-lock.json
+ M package.json
+ M server.ts
+ M src/components/ChromeExtensionStudioView.tsx
+ M src/components/Upload/ContextualUploader.tsx
+ M src/components/Upload/UploadZone.tsx
+ M src/modules/wallpaper/WallpaperSection.tsx
+ M src/server/connector/router.ts
+ M src/services/validation/__tests__/fixtures.ts
+ M src/services/validation/__tests__/qualityGate.test.ts
+ M src/services/validation/aspectRatioValidation.ts
+ M src/services/validation/corruptionCheck.ts
+ M src/services/validation/ffmpegBin.ts
+ M src/services/validation/resolutionValidation.ts
+ M src/services/validation/rotationNormalizer.ts
+ M src/services/validation/thumbnailValidation.ts
+ M src/services/validation/watermarkDetection.ts
+ M tests/validation.test.ts
+ M v1.txt
+ M vitest.config.ts
+?? .forensics/
+?? "4K VIDEO/"
+?? apply-migration-api.mjs
+?? apply-migration.mjs
+?? check-schema.mjs
+?? ct.txt
+?? ct2.txt
+?? ct3.txt
+?? notify.json
+?? profile-pipeline.ts
+?? run-migration-check.ts
+?? run-migration.ts
+?? scan3.txt
+?? src/server/connector/supabaseWallpaper.ts
+?? src/server/connector/uploadRouter.ts
+?? src/workspace/
+?? start-dev.bat
+?? start-dev.ps1
+?? test-4k-video.mp4
+=== wallix-studio git log ===
+e130378 Initial commit

@@ -1,0 +1,20 @@
+﻿import React, { useState, useRef, useEffect } from 'react';
+import { AnimatePresence } from 'motion/react';
+import { Wallpaper } from '../../../types';
+import { WindowsEnvironmentConfig } from './types';
+import { WindowsTopSystemBar } from './WindowsTopSystemBar';
+import { WindowsTaskbar } from './WindowsTaskbar';
+import { WindowsTrayFlyouts } from './WindowsTrayFlyouts';
+import { WindowsAppWindow, WindowLifecycleState } from './WindowsAppWindow';
+import { AppDrawerLauncher } from '../../Widgets/AppDrawerLauncher';
+import { resolveWallpaperMedia } from '../../../utils/mediaType';
+
+interface WindowsDesktopCanvasProps {
+  config: WindowsEnvironmentConfig;
+  onChangeConfig: (newConfig: WindowsEnvironmentConfig) => void;
+  activeWallpaper: Wallpaper;
+  wallpapers: Wallpaper[];
+  onSelectWallpaper: (w: Wallpaper) => void;
+  selectedIconId: string | null;
+  onSelectIcon: (id: string | null) => void;
+  onOpenSettingsTab: (tabId: string) => void;

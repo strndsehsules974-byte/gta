@@ -1,0 +1,42 @@
+﻿=== PW VERSION ===
+1.64.0
+
+=== BROWSER CACHE ===
+.links
+chromium-1234
+chromium-1243
+chromium-1248
+chromium_headless_shell-1234
+chromium_headless_shell-1243
+chromium_headless_shell-1248
+ffmpeg-1011
+ffmpeg-1013
+firefox-1543
+webkit-2359
+winldd-1007
+
+=== PLAYWRIGHT INSTALL DRY-RUN ===
+Chrome for Testing 156.0.8078.4 (playwright chromium v1248)
+  Install location:    C:\Users\admin\AppData\Local\ms-playwright\chromium-1248
+  Download url:        https://cdn.playwright.dev/builds/cft/156.0.8078.4/win64/chrome-win64.zip
+
+FFmpeg (playwright ffmpeg v1013)
+  Install location:    C:\Users\admin\AppData\Local\ms-playwright\ffmpeg-1013
+  Download url:        https://cdn.playwright.dev/dbazure/download/playwright/builds/ffmpeg/1013/ffmpeg-win64.zip
+  Download fallback 1: https://playwright.download.prss.microsoft.com/dbazure/download/playwright/builds/ffmpeg/1013/ffmpeg-win64.zip
+  Download fallback 2: https://cdn.playwright.dev/builds/ffmpeg/1013/ffmpeg-win64.zip
+
+Chrome Headless Shell 156.0.8078.4 (playwright chromium-headless-shell v1248)
+  Install location:    C:\Users\admin\AppData\Local\ms-playwright\chromium_headless_shell-1248
+  Download url:        https://cdn.playwright.dev/builds/cft/156.0.8078.4/win64/chrome-headless-shell-win64.zip
+
+Winldd (playwright winldd v1007)
+  Install location:    C:\Users\admin\AppData\Local\ms-playwright\winldd-1007
+  Download url:        https://cdn.playwright.dev/dbazure/download/playwright/builds/winldd/1007/winldd-win64.zip
+  Download fallback 1: https://playwright.download.prss.microsoft.com/dbazure/download/playwright/builds/winldd/1007/winldd-win64.zip
+  Download fallback 2: https://cdn.playwright.dev/builds/winldd/1007/winldd-win64.zip
+
+
+=== FFPROBE ===
+C:\Users\admin\AppData\Local\Microsoft\WinGet\Packages\Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\ffmpeg-9.0.2-full_build\bin\ffprobe.exe
+ffprobe version 9.0.2-full_build-www.gyan.dev Copyright (c) 2007-2026 the FFmpeg developers

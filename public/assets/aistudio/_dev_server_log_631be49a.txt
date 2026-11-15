@@ -1,0 +1,85 @@
+
+> react-example@0.0.0 dev
+> cross-env NODE_OPTIONS="--max-old-space-size=4096" tsx server.ts
+
+[2m11:48:08 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m Re-optimizing dependencies because lockfile has changed
+[HTTPS] Could not prepare TLS certificates: TypeError [ERR_INVALID_ARG_TYPE]: The "data" argument must be of type string or an instance of Buffer, TypedArray, or DataView. Received undefined
+    at Object.writeFileSync (node:fs:2423:5)
+    at ensureHttpsCertificates (C:\Users\admin\dilkush007\wallix-code\src\server\httpsSetup.ts:84:8)
+    at startServer (C:\Users\admin\dilkush007\wallix-code\server.ts:165:15) {
+  code: 'ERR_INVALID_ARG_TYPE'
+}
+[PROJECT-03] Target Application running on http://localhost:3000
+[PROJECT-03] TLS certificates unavailable — serving over plain HTTP only.
+[PROJECT-03] PROJECT-02 Development Connector active at /api/connector
+[2m12:44:42 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/@fs/C:\Users\admin\dilkush007\wallix-code\src\components\WallpaperModal.tsx, /src/index.css[22m
+[2m12:51:33 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /@fs/C:\Users\admin\dilkush007\wallix-code\src\components\ChromeExtensionStudioView.tsx, /@fs/C:\Users\admin\dilkush007\wallix-code\src\components\TargetSelection\TargetCard.tsx, /@fs/C:\Users\admin\dilkush007\wallix-code\src\modules\chrome\ChromeNewTabPreview.tsx[22m
+[2m12:51:33 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/@fs/C:\Users\admin\dilkush007\wallix-code\src\modules\chrome\ChromeNewTabPreview.tsx, /src/index.css[22m
+[2m12:51:33 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /@fs/C:\Users\admin\dilkush007\wallix-code\src\components\ChromeExtensionStudioView.tsx, /@fs/C:\Users\admin\dilkush007\wallix-code\src\components\TargetSelection\TargetCard.tsx, /@fs/C:\Users\admin\dilkush007\wallix-code\src\modules\chrome\ChromeNewTabPreview.tsx[22m
+[2m12:52:12 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /@fs/C:\Users\admin\dilkush007\wallix-code\src\components\ChromeExtensionStudioView.tsx, /@fs/C:\Users\admin\dilkush007\wallix-code\src\components\TargetSelection\TargetCard.tsx, /@fs/C:\Users\admin\dilkush007\wallix-code\src\modules\chrome\ChromeNewTabPreview.tsx[22m
+[2m12:52:31 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /@fs/C:\Users\admin\dilkush007\wallix-code\src\components\ChromeExtensionStudioView.tsx, /@fs/C:\Users\admin\dilkush007\wallix-code\src\components\TargetSelection\TargetCard.tsx, /@fs/C:\Users\admin\dilkush007\wallix-code\src\modules\chrome\ChromeNewTabPreview.tsx[22m
+[2m12:52:48 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /@fs/C:\Users\admin\dilkush007\wallix-code\src\components\ChromeExtensionStudioView.tsx, /@fs/C:\Users\admin\dilkush007\wallix-code\src\components\TargetSelection\TargetCard.tsx, /@fs/C:\Users\admin\dilkush007\wallix-code\src\modules\chrome\ChromeNewTabPreview.tsx[22m
+[2m12:53:07 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/@fs/C:\Users\admin\dilkush007\wallix-code\src\components\ChromeExtensionStudioView.tsx, /src/index.css[22m
+[2m12:53:36 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/@fs/C:\Users\admin\dilkush007\wallix-code\src\components\AutomatedThemeInstallModal.tsx, /src/index.css[22m
+[2m12:54:03 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/@fs/C:\Users\admin\dilkush007\wallix-code\src\components\AutomatedThemeInstallModal.tsx, /src/index.css[22m
+[2m12:54:03 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/@fs/C:\Users\admin\dilkush007\wallix-code\src\components\AutomatedThemeInstallModal.tsx, /src/index.css[22m
+[2m12:54:06 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/@fs/C:\Users\admin\dilkush007\wallix-code\src\components\AutomatedThemeInstallModal.tsx, /src/index.css[22m
+[2m12:56:39 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/vite-env.d.ts[22m
+[2m12:59:00 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/modules/chrome/ChromeSection.tsx[22m
+[2m1:00:38 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/modules/chrome/ChromeSection.tsx[22m
+[2m1:01:54 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/modules/chrome/ChromeSection.tsx[22m
+[2m1:03:29 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/@fs/C:\Users\admin\dilkush007\wallix-code\src\components\ChromeExtensionStudioView.tsx, /src/index.css[22m
+[2m1:03:58 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/@fs/C:\Users\admin\dilkush007\wallix-code\src\components\ChromeExtensionStudioView.tsx, /src/index.css[22m
+[2m1:05:14 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/modules/chrome/ChromeControlsPanel.tsx[22m
+[2m1:05:25 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/modules/chrome/ChromeControlsPanel.tsx[22m
+[2m1:18:49 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/@fs/C:\Users\admin\dilkush007\wallix-code\src\components\ResetThemeConfirmModal.tsx, /src/index.css[22m
+[2m1:46:28 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/@fs/C:\Users\admin\dilkush007\wallix-code\src\components\ResetThemeConfirmModal.tsx, /src/index.css[22m
+[2m1:53:23 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/@fs/C:\Users\admin\dilkush007\wallix-code\src\components\ResetThemeConfirmModal.tsx, /src/index.css[22m
+[2m1:53:30 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /@fs/C:\Users\admin\dilkush007\wallix-code\src\components\ChromeExtensionStudioView.tsx, /@fs/C:\Users\admin\dilkush007\wallix-code\src\components\TargetSelection\TargetCard.tsx, /@fs/C:\Users\admin\dilkush007\wallix-code\src\modules\chrome\ChromeNewTabPreview.tsx[22m
+[2m2:01:55 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css[22m
+[2m2:01:55 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css[22m
+[2m2:01:55 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css[22m
+[2m2:01:58 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/@fs/C:\Users\admin\dilkush007\wallix-code\src\components\ChromeExtensionStudioView.tsx, /src/index.css[22m
+[2m2:02:02 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/@fs/C:\Users\admin\dilkush007\wallix-code\src\components\ChromeExtensionStudioView.tsx, /src/index.css[22m
+[2m2:02:02 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/@fs/C:\Users\admin\dilkush007\wallix-code\src\components\ChromeExtensionStudioView.tsx, /src/index.css[22m
+[2m2:02:05 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/@fs/C:\Users\admin\dilkush007\wallix-code\src\components\ChromeExtensionStudioView.tsx, /src/index.css[22m
+[2m2:02:08 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/@fs/C:\Users\admin\dilkush007\wallix-code\src\components\ChromeExtensionStudioView.tsx, /src/index.css[22m
+[2m2:02:11 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/@fs/C:\Users\admin\dilkush007\wallix-code\src\components\ChromeExtensionStudioView.tsx, /src/index.css[22m
+[2m2:02:11 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/@fs/C:\Users\admin\dilkush007\wallix-code\src\components\ChromeExtensionStudioView.tsx, /src/index.css[22m
+[2m2:02:14 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/@fs/C:\Users\admin\dilkush007\wallix-code\src\components\ChromeExtensionStudioView.tsx, /src/index.css[22m
+[2m2:05:26 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/@fs/C:\Users\admin\dilkush007\wallix-code\src\components\ResetThemeConfirmModal.tsx, /src/index.css[22m
+[2m2:47:24 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mpackage.json[22m
+[2m2:47:24 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mpackage.json[22m
+[2m2:48:22 am[22m [36m[1m[vite][22m[39m [32mvite.config.ts changed, restarting server...[39m
+[31mfailed to load config from C:\Users\admin\dilkush007\wallix-code\vite.config.ts[39m
+[2m2:48:23 am[22m [31m[1m[vite][22m[39m config must export or return an object.
+[2m2:48:23 am[22m [31m[1m[vite][22m[39m server restart failed
+[2m2:51:32 am[22m [36m[1m[vite][22m[39m [32mvite.config.ts changed, restarting server...[39m
+[2m2:51:35 am[22m [36m[1m[vite][22m[39m server restarted.
+[2m2:58:47 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /@fs/C:\Users\admin\dilkush007\wallix-code\src\components\ChromeExtensionStudioView.tsx, /@fs/C:\Users\admin\dilkush007\wallix-code\src\modules\chrome\ChromeNewTabPreview.tsx, /@fs/C:\Users\admin\dilkush007\wallix-code\src\components\TargetSelection\TargetCard.tsx[22m
+[2m2:58:54 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /@fs/C:\Users\admin\dilkush007\wallix-code\src\components\ChromeExtensionStudioView.tsx, /@fs/C:\Users\admin\dilkush007\wallix-code\src\modules\chrome\ChromeNewTabPreview.tsx, /@fs/C:\Users\admin\dilkush007\wallix-code\src\components\TargetSelection\TargetCard.tsx[22m
+[2m2:59:02 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /@fs/C:\Users\admin\dilkush007\wallix-code\src\components\ChromeExtensionStudioView.tsx, /@fs/C:\Users\admin\dilkush007\wallix-code\src\modules\chrome\ChromeNewTabPreview.tsx, /@fs/C:\Users\admin\dilkush007\wallix-code\src\components\TargetSelection\TargetCard.tsx[22m
+[2m2:59:02 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /@fs/C:\Users\admin\dilkush007\wallix-code\src\components\ChromeExtensionStudioView.tsx, /@fs/C:\Users\admin\dilkush007\wallix-code\src\modules\chrome\ChromeNewTabPreview.tsx, /@fs/C:\Users\admin\dilkush007\wallix-code\src\components\TargetSelection\TargetCard.tsx[22m
+[2m2:59:07 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/utils/extensionZipExporter.ts[22m
+[2m2:59:07 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/utils/extensionZipExporter.ts[22m
+[2m2:59:14 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/utils/extensionZipExporter.ts[22m
+[2m2:59:21 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/utils/extensionZipExporter.ts[22m
+[2m2:59:29 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/utils/extensionZipExporter.ts[22m
+[2m3:00:23 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/components/ChromeExtensionModal.tsx[22m
+[2m3:00:31 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/components/ChromeExtensionModal.tsx[22m
+[2m3:00:37 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/components/ChromeExtensionModal.tsx[22m
+[2m3:00:37 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/components/ChromeExtensionModal.tsx[22m
+[2m3:00:45 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mextension/manifest.json[22m
+[2m3:01:04 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/modules/chrome/types.test.ts[22m
+[2m3:01:49 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/modules/chrome/ChromeSection.tsx[22m
+[2m3:01:49 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mextension/storage.js[22m
+[2m3:01:49 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /@fs/C:\Users\admin\dilkush007\wallix-code\src\components\ChromeExtensionStudioView.tsx, /@fs/C:\Users\admin\dilkush007\wallix-code\src\modules\chrome\ChromeNewTabPreview.tsx, /@fs/C:\Users\admin\dilkush007\wallix-code\src\components\TargetSelection\TargetCard.tsx[22m
+[2m3:01:49 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mextension/storage.js[22m
+[2m3:01:57 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/@fs/C:\Users\admin\dilkush007\wallix-code\src\components\ChromeExtensionStudioView.tsx, /src/index.css[22m
+[2m3:02:02 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/@fs/C:\Users\admin\dilkush007\wallix-code\src\components\ChromeExtensionStudioView.tsx, /src/index.css[22m
+[2m3:02:05 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/@fs/C:\Users\admin\dilkush007\wallix-code\src\components\ChromeExtensionStudioView.tsx, /src/index.css[22m
+[2m3:02:08 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/@fs/C:\Users\admin\dilkush007\wallix-code\src\components\ChromeExtensionStudioView.tsx, /src/index.css[22m
+[2m3:02:13 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/@fs/C:\Users\admin\dilkush007\wallix-code\src\components\ChromeExtensionStudioView.tsx, /src/index.css[22m
+[2m3:02:16 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/@fs/C:\Users\admin\dilkush007\wallix-code\src\components\ChromeExtensionStudioView.tsx, /src/index.css[22m
+[2m3:14:55 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /@fs/C:\Users\admin\dilkush007\wallix-code\src\components\ChromeExtensionStudioView.tsx, /@fs/C:\Users\admin\dilkush007\wallix-code\src\modules\chrome\ChromeNewTabPreview.tsx, /@fs/C:\Users\admin\dilkush007\wallix-code\src\components\TargetSelection\TargetCard.tsx[22m
+[2m3:14:58 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /@fs/C:\Users\admin\dilkush007\wallix-code\src\components\ChromeExtensionStudioView.tsx, /@fs/C:\Users\admin\dilkush007\wallix-code\src\modules\chrome\ChromeNewTabPreview.tsx, /@fs/C:\Users\admin\dilkush007\wallix-code\src\components\TargetSelection\TargetCard.tsx[22m

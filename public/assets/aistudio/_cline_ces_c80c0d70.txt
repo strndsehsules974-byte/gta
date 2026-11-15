@@ -1,0 +1,113 @@
+﻿=== ChromeExtensionStudioView imports ===
+import React, { useState, useEffect, useMemo, useRef } from 'react';
+import { 
+  ArrowLeft,
+  Chrome,
+  CheckCircle2,
+  RotateCcw,
+  ExternalLink,
+  Monitor,
+  Search,
+  Mic,
+  Camera,
+  Plus,
+  Mail,
+  ImageIcon,
+  User,
+  Globe,
+  Github,
+  Figma,
+  Sparkles,
+  X
+} from 'lucide-react';
+import { motion, AnimatePresence } from 'motion/react';
+import confetti from 'canvas-confetti';
+import { Wallpaper } from '../types';
+import { ChromeSubTab } from '../types/chrome';
+import { ThemeConfig, WALLIX_THEME_PRESETS } from '../types/theme';
+import { ChromeNewTabPreview } from '../modules/chrome/ChromeNewTabPreview';
+import { ChromeNewTabSettings, ChromeShortcut } from '../modules/chrome/types';
+import { saveChromeSettings, generateManifestV3Package, resolveSafeWallpaperUrl, initExtensionConnectionListener, ExtensionBridgeStatus } from '../modules/chrome/extensionBridge';
+import { AutomatedThemeInstallModal } from './AutomatedThemeInstallModal';
+import { ResetThemeConfirmModal } from './ResetThemeConfirmModal';
+import { Toast } from './Toast';
+import { useChromeBridge } from '../hooks/useChromeBridge';
+
+const RedditIcon: React.FC<{ className?: string }> = ({ className = '' }) => (
+  <svg className={className} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+    <circle cx="12" cy="12" r="10" fill="#FF4500"/>
+    <path d="M8 11C8 9.34315 9.34315 8 11 8H13C14.6569 8 16 9.34315 16 11V13H18C18.5523 13 19 13.4477 19 14V16C19 16.5523 18.5523 17 18 17H16V19C16 19.5523 15.5523 20 15 20H9C8.44772 20 8 19.5523 8 19V17H6C5.44772 17 5 16.5523 5 16V14C5 13.4477 5.44772 13 6 13H8V11Z" fill="white"/>
+    <circle cx="9" cy="11" r="1" fill="#FF4500"/>
+    <circle cx="15" cy="11" r="1" fill="#FF4500"/>
+
+=== lines 300-345 ===
+  const handleBeginnerInstall = async () => {
+    try {
+      await saveChromeSettings(extensionSettings, chromeShortcuts);
+      setInstallRunKey((k) => k + 1);
+      setShowInstallModal(true);
+      setProbeTick((t) => t + 1);
+
+      const theme = {
+        id: selectedPreset.id || currentMedia.title || 'wallix-theme',
+        name: currentMedia.title || selectedPreset.name,
+        imageUrl: currentMedia.imageUrl || selectedPreset.background,
+        widgets: {
+          clock: true,
+          search: true,
+          shortcuts: true,
+        },
+      };
+
+      await bridge.applyTheme(theme);
+    } catch (err) {
+      console.error('Beginner install failed:', err);
+      if (onShowToast) {
+        onShowToast({
+          title: 'Install Prep Failed',
+          subtitle: err instanceof Error ? err.message : 'Could not save settings',
+          icon: <X className="w-4 h-4 text-rose-400" />
+        });
+      }
+    }
+  };
+
+  // "Done & Open Chrome" completion handler for the vertical pipeline modal
+  const handleDoneAndOpen = async () => {
+    try {
+      await bridge.openNewTab();
+      setShowInstallModal(false);
+      try {
+        confetti({
+          particleCount: 80,
+          spread: 90,
+          origin: { y: 0.6 },
+          colors: ['#06b6d4', '#3b82f6', '#10b981']
+        });
+      } catch {}
+      if (onShowToast) {
+        onShowToast({
+
+=== lines 720-740 ===
+
+      {/* ========================================================================= */}
+      {/* AUTOMATED THEME INSTALL MODAL (Vertical Pipeline) â€” mounted on           */}
+      {/* "Apply to Chrome" via Framer Motion AnimatePresence                       */}
+      {/* ========================================================================= */}
+      <AutomatedThemeInstallModal
+        isOpen={showInstallModal}
+        onClose={() => setShowInstallModal(false)}
+        onComplete={handleDoneAndOpen}
+        runKey={installRunKey}
+        stepStatuses={bridge.steps}
+        error={bridge.error}
+      />
+
+      {/* ========================================================================= */}
+      {/* MODALS */}
+      {/* ========================================================================= */}
+      {isInstallModalOpen && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-xl animate-fadeIn">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.95, y: 20 }}
+

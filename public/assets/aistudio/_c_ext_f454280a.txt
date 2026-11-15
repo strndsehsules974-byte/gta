@@ -1,0 +1,114 @@
+﻿=== extension dir ===
+manifest.json
+newtab.html
+newtab.js
+README.md
+samurai_spider_lily.jpg
+storage.js
+styles.css
+=== extension manifest ===
+{
+  "manifest_version": 3,
+  "name": "WALLIX - 4K & Live Video New Tab",
+  "version": "3.5.0",
+  "description": "Ultra-fast 60 FPS Live Video & 4K Wallpaper New Tab Dashboard with customizable search, interactive dock shortcuts, and theme presets.",
+  "action": {
+    "default_title": "WALLIX New Tab"
+  },
+  "chrome_url_overrides": {
+    "newtab": "newtab.html"
+  },
+  "permissions": [
+    "storage",
+    "topSites",
+    "favicon"
+  ],
+  "host_permissions": [
+    "https://api.open-meteo.com/*",
+    "https://www.google.com/*"
+  ],
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
+=== AppDrawerLauncher exists? ===
+AICompanionWidget.tsx
+AlignmentGuides.tsx
+AppDrawerLauncher.tsx
+CalendarWidget.tsx
+ClockWidget.tsx
+DraggableWidgetWrapper.tsx
+FloatingWidgetOverlay.tsx
+LayoutToolbar.tsx
+MacAppDock.tsx
+MusicWidget.tsx
+WeatherWidget.tsx
+=== framer-motion in deps? ===
+    "@supabase/supabase-js": "^2.117.2",
+    "@types/jszip": "^3.4.1",
+    "jszip": "^3.10.1",
+    "motion": "^12.23.24",
+=== extensionBridge.test.ts ===
+import { describe, expect, it } from 'vitest';
+import JSZip from 'jszip';
+import {
+  DEFAULT_CHROME_SETTINGS,
+  ChromeShortcut,
+  ChromeNewTabSettings,
+} from './types';
+import {
+  generateManifestV3Package,
+  isBridgeableWallpaperUrl,
+  resolveSafeWallpaperUrl,
+} from './extensionBridge';
+import { renderExtensionIconPng } from './extensionIcons';
+
+const sampleShortcuts: ChromeShortcut[] = [
+  {
+    id: '1',
+    title: 'Google',
+    url: 'https://www.google.com',
+    initials: 'G',
+    gradient: 'from-blue-500 to-indigo-600',
+    glowColor: 'rgba(59,130,246,0.5)',
+    isDefault: true,
+  },
+];
+
+const sampleSettings: ChromeNewTabSettings = {
+  ...DEFAULT_CHROME_SETTINGS,
+  theme: 'cyber-cyan',
+};
+
+const PNG_MAGIC = [0x89, 0x50, 0x4e, 0x47];
+
+describe('renderExtensionIconPng', () => {
+  it('emits valid PNG signature and IHDR dimensions', () => {
+    const png = renderExtensionIconPng(128, '#06b6d4');
+    expect(Array.from(png.subarray(0, 4))).toEqual(PNG_MAGIC);
+    const width = ((png[16] << 24) | (png[17] << 16) | (png[18] << 8) | png[19]) >>> 0;
+    const height = ((png[20] << 24) | (png[21] << 16) | (png[22] << 8) | png[23]) >>> 0;
+    expect(width).toBe(128);
+    expect(height).toBe(128);
+  });
+
+  it('clamps requested sizes into the supported 16â€“256 range', () => {
+    const tiny = renderExtensionIconPng(1, '#ffffff');
+    const width = ((tiny[16] << 24) | (tiny[17] << 16) | (tiny[18] << 8) | tiny[19]) >>> 0;
+    expect(width).toBe(16);
+  });
+
+  it('tolerates malformed hex colors by falling back to cyan', () => {
+    const png = renderExtensionIconPng(16, 'not-a-color');
+    expect(Array.from(png.subarray(0, 4))).toEqual(PNG_MAGIC);
+  });
+});
+
+describe('generateManifestV3Package', () => {
+  it('produces an installable Manifest V3 archive with unified branding', async () => {
+    const blob = await generateManifestV3Package(sampleSettings, sampleShortcuts);
+    const zip = await JSZip.loadAsync(await blob.arrayBuffer());
+
+

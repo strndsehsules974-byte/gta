@@ -1,0 +1,13 @@
+﻿src\components\LiveShaders\DepthParallaxCanvas.tsx:22: export const DepthParallaxCanvas: React.FC<DepthParallaxCanvasProps> = ({
+src\components\AIStudioModal.tsx:29: export const AIStudioModal: React.FC<AIStudioModalProps> = ({
+src\components\ArcCarouselLanding.tsx:13: export const ArcCarouselLanding: React.FC<ArcCarouselLandingProps> = ({
+src\components\ArcCarouselLanding.tsx:147: <WallixLogo3D size={118} />
+src\components\HeroCarousel.tsx:27: export const HeroCarousel: React.FC<HeroCarouselProps> = ({
+src\components\HomeDashboardView.tsx:59: <HeroCarousel
+src\components\LiveWallpapersView.tsx:42: export const LiveWallpapersView: React.FC<LiveWallpapersViewProps> = ({
+src\components\Navbar.tsx:96: <WallixLogo3D size={34} className="transition-transform duration-300 group-hover:scale-105" />
+src\components\WallpaperModal.tsx:43: export const WallpaperModal: React.FC<WallpaperModalProps> = ({
+src\modules\wallpaper\WallpaperSection.tsx:302: <HeroCarousel
+src\App.tsx:1364: <LiveWallpapersView
+src\App.tsx:1490: <WallpaperModal
+src\App.tsx:1518: <AIStudioModal

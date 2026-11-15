@@ -1,0 +1,40 @@
+import React, { useState, useRef, useEffect, useMemo } from 'react';
+import { WallpaperThumb } from '../../common/WallpaperThumb';
+import { motion, AnimatePresence } from 'motion/react';
+import { 
+  X, 
+  Minus, 
+  Square, 
+  HardDrive, 
+  FolderOpen, 
+  Settings, 
+  Trash2, 
+  Sparkles, 
+  Shield, 
+  Check, 
+  Terminal as TerminalIcon,
+  Monitor,
+  Folder,
+  Layers,
+  Globe,
+  Compass,
+  Music,
+  Clock as ClockIcon,
+  Search,
+  ExternalLink,
+  RotateCw,
+  Lock,
+  ChevronRight,
+  Bookmark
+} from 'lucide-react';
+import { Wallpaper } from '../../../types';
+
+export type WindowLifecycleState = 'closed' | 'opening' | 'open' | 'active' | 'minimized' | 'closing';
+
+export interface WindowsAppWindowProps {
+  appId: string;
+  lifecycleState: WindowLifecycleState;
+  isActive: boolean;
+  isMaximized: boolean;
+  dockOrigin: { x: number; y: number } | null;
+  exitMode?: 'minimize' | 'close';

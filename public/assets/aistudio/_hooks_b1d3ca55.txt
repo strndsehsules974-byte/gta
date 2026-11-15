@@ -1,0 +1,6 @@
+﻿useChromeBridge.tsx
+extensionZipExporter.ts
+galleryDedup.ts
+mediaStorage.ts
+mediaType.ts
+sanitizeTitle.ts

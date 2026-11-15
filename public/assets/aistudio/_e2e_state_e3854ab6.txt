@@ -1,0 +1,25 @@
+﻿=== LOCK FILE ===
+False
+=== SEEN PINS ===
+count: 1
+mtime: 10/17/2026 02:30:14
+=== PIN STATES ===
+entries: 2
+mtime: 10/17/2026 02:30:13
+=== DOWNLOADS DIRS ===
+processed : 0 files
+quarantine : 1 files
+staging : 0 files
+thumbs : 2 files
+
+=== BROWSER PROFILE ===
+exists: True
+mtime: 10/16/2026 20:02:14
+has Default: True
+=== PROFILE LOCK ===
+False
+=== YT-DLP ===
+venv exe: True
+PATH: C:\Users\admin\dilkush007\.venv\Scripts\yt-dlp.exe
+=== FFMPEG ===
+C:\Users\admin\AppData\Local\Microsoft\WinGet\Packages\Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\ffmpeg-9.0.2-full_build\bin\ffmpeg.exe

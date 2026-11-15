@@ -1,0 +1,32 @@
+﻿=== line 20 ===
+import { SearchView } from './components/SearchView';
+import { DownloadsView } from './components/DownloadsView';
+import { CollectionsView } from './components/CollectionsView';
+import { AddToCollectionModal } from './components/AddToCollectionModal';
+import { ArcCarouselLanding } from './components/ArcCarouselLanding';
+import { PublishPresetModal } from './components/PublishPresetModal';
+import { PresetApplyModal } from './components/PresetApplyModal';
+import { ChromeExtensionModal } from './components/ChromeExtensionModal';
+import { ChromeExtensionStudioView } from './components/ChromeExtensionStudioView';
+import { HomeDashboardView } from './components/HomeDashboardView';
+import { LiveWallpaperStudioView } from './components/LiveWallpaperStudioView';
+import { WallpaperThemesView } from './components/WallpaperThemesView';
+import { WallpaperSection } from './modules/wallpaper/WallpaperSection';
+import { ChromeSection } from './features/environments/chrome-new-tab/ChromeSection';
+import { TargetSelectorView } from './components/TargetSelection/TargetSelectorView';
+=== line 1206 ===
+      <WeatherProvider>
+        <div className="h-screen w-screen max-h-screen max-w-screen overflow-hidden fixed inset-0 bg-[#07090E] text-slate-100 flex flex-col font-['Plus_Jakarta_Sans',sans-serif]">
+        {/* 1. TOP GLOBAL APPLICATION NAVBAR */}
+      <Navbar
+        onOpenLanding={() => {
+          setCurrentTab('home');
+        }}
+        onOpenStudio={() => setIsAIStudioOpen(true)}
+        onOpenExtensionStudio={() => setIsExtensionStudioOpen(true)}
+        searchQuery={searchQuery}
+        onSearchChange={setSearchQuery}
+        isGpuSaverActive={isGpuSaverActive}
+        onToggleGpuSaver={handleToggleGpuSaver}
+        isSearchHighlighted={isSearchHighlighted}
+        onShowToast={(msg) => showToast(msg.title, msg.subtitle, msg.icon)}

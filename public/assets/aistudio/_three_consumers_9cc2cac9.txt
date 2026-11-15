@@ -1,0 +1,24 @@
+﻿src\components\LiveShaders\DepthParallaxCanvas.tsx:5: import { ThreeLiveWallpaper } from './ThreeLiveWallpaper';
+src\components\LiveShaders\DepthParallaxCanvas.tsx:6: import { Model3DViewer } from './Model3DViewer';
+src\components\LiveShaders\DepthParallaxCanvas.tsx:111: <Model3DViewer modelUrl={wallpaper.modelUrl} autoRotate={!isPaused} className="w-full h-full" />
+src\components\LiveShaders\DepthParallaxCanvas.tsx:126: <ThreeLiveWallpaper
+src\components\LiveShaders\Model3DViewer.tsx:6: interface Model3DViewerProps {
+src\components\LiveShaders\Model3DViewer.tsx:17: export const Model3DViewer: React.FC<Model3DViewerProps> = ({
+src\components\LiveShaders\ThreeLiveWallpaper.tsx:14: export const ThreeLiveWallpaper: React.FC<Props> = ({
+src\components\AIStudioModal.tsx:19: import { ThreeLiveWallpaper } from './LiveShaders/ThreeLiveWallpaper';
+src\components\AIStudioModal.tsx:240: <ThreeLiveWallpaper shaderType={shaderType} speedMultiplier={speed} className="w-full h-full" />
+src\components\HeroCarousel.tsx:12: import { ThreeLiveWallpaper } from './LiveShaders/ThreeLiveWallpaper';
+src\components\HeroCarousel.tsx:13: import { Model3DViewer } from './LiveShaders/Model3DViewer';
+src\components\HeroCarousel.tsx:143: <Model3DViewer modelUrl={heroMedia.sourceUrl} autoRotate className="w-full h-full" />
+src\components\HeroCarousel.tsx:145: <ThreeLiveWallpaper shaderType={current.shaderType} interactive={true} className="w-full h-full" />
+src\components\LiveWallpapersView.tsx:17: import { Model3DViewer } from './LiveShaders/Model3DViewer';
+src\components\LiveWallpapersView.tsx:284: <Model3DViewer
+src\components\LiveWallpapersView.tsx:308: <Model3DViewer
+src\components\WallpaperModal.tsx:17: import { ThreeLiveWallpaper } from './LiveShaders/ThreeLiveWallpaper';
+src\components\WallpaperModal.tsx:18: import { Model3DViewer } from './LiveShaders/Model3DViewer';
+src\components\WallpaperModal.tsx:178: <Model3DViewer modelUrl={previewMedia.sourceUrl} autoRotate={true} className="w-full h-full" />
+src\components\WallpaperModal.tsx:194: <ThreeLiveWallpaper shaderType={wallpaper.shaderType} interactive={true} className="w-full h-full" />
+src\server\connector\discovery.ts:148: name: 'ThreeLiveWallpaper',
+src\server\connector\discovery.ts:150: filePath: 'src/components/LiveShaders/ThreeLiveWallpaper.tsx',
+src\server\connector\discovery.ts:160: name: 'Model3DViewer',
+src\server\connector\discovery.ts:162: filePath: 'src/components/LiveShaders/Model3DViewer.tsx',

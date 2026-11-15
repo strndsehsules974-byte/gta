@@ -1,0 +1,17 @@
+C:\Users\admin\dilkush007\wallix-code\src\modules\chrome\ChromeControlsPanel.tsx
+C:\Users\admin\dilkush007\wallix-code\src\modules\chrome\ChromeNewTabPreview.tsx
+C:\Users\admin\dilkush007\wallix-code\src\modules\chrome\extensionBridge.ts
+C:\Users\admin\dilkush007\wallix-code\src\modules\chrome\GlassSurface.tsx
+C:\Users\admin\dilkush007\wallix-code\src\modules\chrome\types.ts
+C:\Users\admin\dilkush007\wallix-code\src\modules\desktop\adaptive\AdaptiveMaterialEngine.ts
+C:\Users\admin\dilkush007\wallix-code\src\modules\desktop\adaptive\AdaptiveMaterialProvider.tsx
+C:\Users\admin\dilkush007\wallix-code\src\modules\desktop\adaptive\adaptiveMaterialSmoothing.ts
+C:\Users\admin\dilkush007\wallix-code\src\modules\desktop\adaptive\adaptiveMaterialTokens.ts
+C:\Users\admin\dilkush007\wallix-code\src\modules\desktop\adaptive\adaptiveMaterialTypes.ts
+C:\Users\admin\dilkush007\wallix-code\src\modules\desktop\adaptive\adaptiveMaterialUtils.ts
+C:\Users\admin\dilkush007\wallix-code\src\modules\desktop\adaptive\index.ts
+C:\Users\admin\dilkush007\wallix-code\src\modules\desktop\adaptive\useAdaptiveMaterial.ts
+C:\Users\admin\dilkush007\wallix-code\src\modules\desktop\adaptive\WallpaperAnalysisCache.ts
+C:\Users\admin\dilkush007\wallix-code\src\modules\desktop\adaptive\wallpaperAnalysisTypes.ts
+C:\Users\admin\dilkush007\wallix-code\src\modules\desktop\adaptive\WallpaperAnalyzer.ts
+C:\Users\admin\dilkush007\wallix-code\src\modules\wallpaper\WallpaperSection.tsx

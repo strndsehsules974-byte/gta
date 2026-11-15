@@ -1,0 +1,64 @@
+﻿
+src\App.tsx:1:import React, { useState, useEffect, useCallback, useRef } from 
+'react';
+src\App.tsx:2:import { motion } from 'motion/react';
+src\App.tsx:3:import { WALLPAPERS_DATA, CATEGORIES_DATA } from './data/wallpapers';
+src\App.tsx:4:import { LOCAL_WALLPAPERS } from './data/localWallpapers';
+src\App.tsx:5:import { Wallpaper, NavTab, PlatformOS, ResolutionType, AppSettings, 
+DownloadHistoryItem, CollectionFolder, CommunityPreset, WallpaperSubTab } from 
+'./types';
+src\App.tsx:6:import { Sidebar } from './components/Sidebar';
+src\App.tsx:7:import { Navbar } from './components/Navbar';
+src\App.tsx:8:import { HeroCarousel } from './components/HeroCarousel';
+src\App.tsx:9:import { WallpaperGrid } from './components/WallpaperGrid';
+src\App.tsx:10:import { WallpaperModal } from './components/WallpaperModal';
+src\App.tsx:11:import { DesktopSimulatorModal } from 
+'./components/DesktopSimulatorModal';
+src\App.tsx:12:import { AIStudioModal } from './components/AIStudioModal';
+src\App.tsx:13:import { SettingsModal } from './components/SettingsModal';
+src\App.tsx:14:import { CategoriesView } from './components/CategoriesView';
+src\App.tsx:15:import { LiveWallpapersView } from 
+'./components/LiveWallpapersView';
+src\App.tsx:16:import { SearchView } from './components/SearchView';
+src\App.tsx:17:import { DownloadsView } from './components/DownloadsView';
+src\App.tsx:18:import { CollectionsView } from './components/CollectionsView';
+src\App.tsx:19:import { AddToCollectionModal } from 
+'./components/AddToCollectionModal';
+src\App.tsx:20:import { ArcCarouselLanding } from 
+'./components/ArcCarouselLanding';
+src\App.tsx:21:import { PublishPresetModal } from 
+'./components/PublishPresetModal';
+src\App.tsx:22:import { PresetApplyModal } from './components/PresetApplyModal';
+src\App.tsx:23:import { ChromeExtensionModal } from 
+'./components/ChromeExtensionModal';
+src\App.tsx:24:import { ChromeExtensionStudioView } from 
+'./components/ChromeExtensionStudioView';
+src\App.tsx:25:import { HomeDashboardView } from './components/HomeDashboardView';
+src\App.tsx:26:import { LiveWallpaperStudioView } from 
+'./components/LiveWallpaperStudioView';
+src\App.tsx:27:import { WallpaperThemesView } from 
+'./components/WallpaperThemesView';
+src\App.tsx:28:import { WallpaperSection } from 
+'./modules/wallpaper/WallpaperSection';
+src\App.tsx:29:import { ChromeSection } from 
+'./features/environments/chrome-new-tab/ChromeSection';
+src\App.tsx:30:import { TargetSelectorView } from 
+'./components/TargetSelection/TargetSelectorView';
+src\App.tsx:31:import { WindowsTargetWorkspace } from 
+'./components/TargetWorkspaces/WindowsTargetWorkspace';
+src\App.tsx:32:import { MacTargetWorkspace } from 
+'./components/TargetWorkspaces/MacTargetWorkspace';
+src\App.tsx:33:import { MobileTargetWorkspace } from 
+'./components/TargetWorkspaces/MobileTargetWorkspace';
+src\App.tsx:34:import { ThemeConfig } from './types/theme';
+src\App.tsx:35:import { ChromeSubTab } from './types/chrome';
+src\App.tsx:36:import { DownloadHistoryModal } from 
+'./components/DownloadHistoryModal';
+src\App.tsx:37:import { INITIAL_COMMUNITY_PRESETS } from './data/communityPresets';
+src\App.tsx:38:import { SHOW_ENVIRONMENTS } from './config/features.config';
+src\App.tsx:40:import { THEME_PRESETS, ColorGradePreset } from 
+'./data/colorPresets';
+src\App.tsx:41:import { DESKTOP_SKETCH_PRESETS, DesktopPresetItem } from 
+'./data/layoutPresets';
+
+

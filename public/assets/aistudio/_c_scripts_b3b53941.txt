@@ -1,0 +1,30 @@
+﻿
+>   "scripts": {
+      "dev": "cross-env NODE_OPTIONS=\"--max-old-space-size=4096\" tsx server.ts",
+      "dev:vite": "vite --host 127.0.0.1 --port 5173 --open",
+      "dev:mem": "node --max-old-space-size=4096 -r tsx/register server.ts",
+      "build": "cross-env NODE_OPTIONS=\"--max-old-space-size=4096\" vite build && esbuild server.ts --bundle --platform=node 
+--format=esm --packages=external --sourcemap --outfile=dist/server.mjs && node scripts/build-extension.mjs",
+      "build:extension": "node scripts/build-extension.mjs",
+      "watch:extension": "node scripts/watch-extension.mjs",
+      "start": "node dist/server.mjs",
+      "preview": "vite preview",
+      "clean": "rm -rf dist server.js",
+      "lint": "tsc --noEmit",
+      "test": "vitest run",
+      "test:watch": "vitest",
+      "test:coverage": "vitest run --coverage",
+      "validate:scan": "tsx validate.ts scan",
+      "validate": "tsx validate.ts validate",
+      "validate:dry": "tsx validate.ts validate --dry-run",
+      "validate:quarantine": "tsx validate.ts quarantine",
+      "validate:approve": "tsx validate.ts approve",
+      "validate:audit": "tsx validate.ts audit",
+      "validate:report": "tsx validate.ts report",
+      "wallpapers:scan": "tsx upload.js --dry-run",
+      "wallpapers:collect": "tsx upload.js --copy-only",
+      "wallpapers:upload": "tsx upload.js"
+    },
+    "dependencies": {
+
+

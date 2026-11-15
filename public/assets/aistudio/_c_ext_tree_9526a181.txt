@@ -1,0 +1,36 @@
+﻿C:\Users\admin\dilkush007\wallix-code\extension\manifest.json
+C:\Users\admin\dilkush007\wallix-code\extension\newtab.html
+C:\Users\admin\dilkush007\wallix-code\extension\newtab.js
+C:\Users\admin\dilkush007\wallix-code\extension\README.md
+C:\Users\admin\dilkush007\wallix-code\extension\samurai_spider_lily.jpg
+C:\Users\admin\dilkush007\wallix-code\extension\storage.js
+C:\Users\admin\dilkush007\wallix-code\extension\styles.css
+C:\Users\admin\dilkush007\wallix-code\extension\icons\icon128.png
+C:\Users\admin\dilkush007\wallix-code\extension\icons\icon16.png
+C:\Users\admin\dilkush007\wallix-code\extension\icons\icon48.png
+{
+  "manifest_version": 3,
+  "name": "WALLIX - 4K & Live Video New Tab",
+  "version": "3.5.0",
+  "description": "Ultra-fast 60 FPS Live Video & 4K Wallpaper New Tab Dashboard with customizable search, interactive dock shortcuts, and theme presets.",
+  "action": {
+    "default_title": "WALLIX New Tab"
+  },
+  "chrome_url_overrides": {
+    "newtab": "newtab.html"
+  },
+  "permissions": [
+    "storage",
+    "topSites",
+    "favicon"
+  ],
+  "host_permissions": [
+    "https://api.open-meteo.com/*",
+    "https://www.google.com/*"
+  ],
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}

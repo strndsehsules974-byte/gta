@@ -1,0 +1,41 @@
+﻿          className="absolute inset-0 scale-105 will-change-transform"
+          style={{
+            ['--hero-px' as string]: '0px',
+            ['--hero-py' as string]: '0px',
+            transform: `translate3d(var(--hero-px), var(--hero-py), 0) scale(${isHovered ? 1.04 : 1.02})`,
+            transition: 'transform 0.3s ease-out',
+          }}
+        >
+          {heroMedia.kind === 'video' ? (
+            /* Live video banner: auto-playing, looping, muted */
+            <WallpaperMedia
+              wallpaper={current}
+              media={heroMedia}
+              alt={current.title}
+              autoPlay
+              loop
+              muted
+              playsInline
+              preload="auto"
+              className="w-full h-full object-cover pointer-events-none"
+            />
+          ) : heroMedia.kind === 'model3d' ? (
+            <Model3DViewer modelUrl={heroMedia.sourceUrl} autoRotate className="w-full h-full" />
+          ) : current.isLive && current.shaderType ? (
+            <ThreeLiveWallpaper shaderType={current.shaderType} interactive={true} className="w-full h-full" />
+          ) : (
+            <WallpaperMedia
+              wallpaper={current}
+              media={heroMedia}
+              alt={current.title}
+              autoPlay={false}
+              preload="metadata"
+              className="w-full h-full object-cover"
+            />
+          )}
+
+          {/* Cinematic lighting overlays */}
+          <div className="absolute inset-0 bg-gradient-to-t from-[#0F1016] via-[#0F1016]/40 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#0F1016]/80 via-transparent to-transparent" />
+          <div
+            className="absolute inset-0 pointer-events-none opacity-30 mix-blend-screen transition-opacity duration-300"

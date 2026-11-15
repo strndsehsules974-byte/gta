@@ -1,0 +1,116 @@
+﻿        onShowToast={(msg) => showToast(msg.title, msg.subtitle, msg.icon)}
+        wallpapers={wallpapers}
+        onInspectWallpaper={handleInspectWallpaper}
+        onSelectTag={handleSelectTag}
+        onNavigateSearch={() => {
+          setCurrentTab('search');
+          triggerSearchFocus();
+        }}
+      />
+
+      {/* 2. MAIN APPLICATION WORKSPACE (Sidebar + Content Viewport) */}
+      <div className="flex flex-1 min-h-0 min-w-0 overflow-hidden relative">
+        <Sidebar
+          currentTab={currentTab}
+          onSelectTab={handleSelectTab}
+          chromeSubTab={chromeSubTab}
+          onSelectChromeSubTab={setChromeSubTab}
+          liveSubTab={liveSubTab}
+          onSelectLiveSubTab={setLiveSubTab}
+          wallpaperSubTab={wallpaperSubTab}
+          onSelectWallpaperSubTab={setWallpaperSubTab}
+          favoritesCount={favorites.length}
+          downloadsCount={downloads.length}
+          collectionsCount={collections.length}
+          activeWallpaper={activeWallpaper}
+          platformOS={platformOS}
+          isGpuSaverActive={isGpuSaverActive}
+          selectedCategory={selectedCategory}
+          onSelectCategory={(cat) => {
+            setSelectedCategory(cat);
+            setCurrentTab('home');
+          }}
+          wallpapers={wallpapers}
+          selectedDirectoryId={selectedDirectoryId}
+          onSelectDirectoryId={setSelectedDirectoryId}
+          selectedResolution={searchViewResolution}
+          onSelectResolution={setSearchViewResolution}
+          isSettingsOpen={isSettingsOpen}
+          onToggleSettings={() => setIsSettingsOpen((prev) => !prev)}
+        />
+
+        <main
+          id="wallix-main-content-viewport"
+          className="flex-1 min-h-0 min-w-0 h-full overflow-hidden relative flex flex-col bg-[#0A0C13]"
+        >
+            <div className="flex-1 min-h-0 min-w-0 overflow-y-auto overflow-x-hidden p-4 sm:p-6 lg:p-8 custom-scrollbar">
+              {currentTab === 'home' && (
+                <HomeDashboardView
+                  wallpapers={wallpapers}
+                  favorites={favorites}
+                  activeWallpaper={activeWallpaper}
+                  activeWallpaperId={activeWallpaper?.id}
+                  onToggleFavorite={handleToggleFavorite}
+                  onInspect={handleInspectWallpaper}
+                  onApplyDesktop={handleApplyDesktop}
+                  onQuickDownload={handleQuickDownload}
+                  onOpenDesktopSim={handleOpenDesktopSimWithWallpaper}
+                  onShare={handleShareWallpaper}
+                  onOpenAddToCollection={(wp) => setWallpaperForCollection(wp)}
+                  enableTilt={settings.parallaxEnabled}
+                  selectedCategory={selectedCategory}
+                  onSelectCategory={setSelectedCategory}
+                  selectedResolution={selectedResolution}
+                  searchQuery={searchQuery}
+                  activeFilterTab={homeFilterTab}
+                  onFilterTabChange={handleSelectHomeFilter}
+                  hasMore={hasMoreWallpapers}
+                />
+              )}
+
+              {currentTab === 'search' && (
+                <SearchView
+                  wallpapers={wallpapers}
+                  favorites={favorites}
+                  activeWallpaperId={activeWallpaper?.id}
+                  onToggleFavorite={handleToggleFavorite}
+                  onInspect={handleInspectWallpaper}
+                  onApplyDesktop={handleApplyDesktop}
+                  onQuickDownload={handleQuickDownload}
+                  onOpenDesktopSim={handleOpenDesktopSimWithWallpaper}
+                  onShare={handleShareWallpaper}
+                  enableTilt={settings.parallaxEnabled}
+                  searchQuery={searchQuery}
+                  onSearchQueryChange={setSearchQuery}
+                  selectedDirectoryId={selectedCategory}
+                  onSelectDirectoryId={setSelectedCategory}
+                  selectedResolution={selectedResolution}
+                  onSelectResolution={(res: string) => setSelectedResolution(res as ResolutionType | 'All')}
+                />
+              )}
+
+              {currentTab === 'customize' && (
+                <TargetSelectorView
+                  onSelectTarget={(targetId) => {
+                    if (targetId === 'windows') setCurrentTab('windows');
+                    else if (targetId === 'macos') setCurrentTab('macos');
+                    else if (targetId === 'mobile') setCurrentTab('mobile');
+                    else if (targetId === 'chrome') setCurrentTab('chrome-extension');
+                  }}
+                  onNavigateHomeWallpapers={() => setCurrentTab('home')}
+                />
+              )}
+
+              {currentTab === 'windows' && (
+                <WindowsTargetWorkspace
+                  wallpapers={wallpapers}
+                  activeWallpaper={activeWallpaper}
+                  onBackToTargets={() => setCurrentTab('customize')}
+                  onOpenFullSimulator={(w) => handleOpenDesktopSimWithWallpaper(w)}
+                  onSelectWallpaper={setActiveWallpaper}
+                  onShowToast={(msg) => showToast(msg.title, msg.subtitle, msg.icon)}
+                />
+              )}
+
+              {currentTab === 'macos' && (
+                <MacTargetWorkspace

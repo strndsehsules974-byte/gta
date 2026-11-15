@@ -1,0 +1,87 @@
+﻿=== search adaptive ===
+src\components\topbar\actionCenter\WindowsActionCenterFlyout.tsx:8: import { useAdaptiveMaterial } from '../../../modules/desktop/adaptive';
+src\components\topbar\actionCenter\WindowsActionCenterFlyout.tsx:29: const { tokens } = useAdaptiveMaterial();
+src\components\topbar\actionCenter\WindowsBrightnessSlider.tsx:4: import { useAdaptiveMaterial } from '../../../modules/desktop/adaptive';
+src\components\topbar\actionCenter\WindowsBrightnessSlider.tsx:8: const { tokens } = useAdaptiveMaterial();
+src\components\topbar\actionCenter\WindowsNetworkFlyout.tsx:17: import { useAdaptiveMaterial } from '../../../modules/desktop/adaptive';
+src\components\topbar\actionCenter\WindowsNetworkFlyout.tsx:47: const { tokens } = useAdaptiveMaterial();
+src\components\topbar\actionCenter\WindowsQuickActionTile.tsx:3: import { useAdaptiveMaterial } from '../../../modules/desktop/adaptive';
+src\components\topbar\actionCenter\WindowsQuickActionTile.tsx:25: const { tokens } = useAdaptiveMaterial();
+src\components\topbar\weather\WeatherFlyout.tsx:12: import { useAdaptiveMaterial } from '../../../modules/desktop/adaptive';
+src\components\topbar\weather\WeatherFlyout.tsx:42: const { tokens, getTokensForRegion } = useAdaptiveMaterial();
+src\components\topbar\weather\WeatherStatusPill.tsx:5: import { useAdaptiveMaterial } from '../../../modules/desktop/adaptive';
+src\components\topbar\weather\WeatherStatusPill.tsx:34: const { tokens } = useAdaptiveMaterial();
+src\components\Widgets\AppDrawerLauncher.tsx:20: useAdaptiveMaterial,
+src\components\Widgets\AppDrawerLauncher.tsx:23: sanitizeAdaptiveAccent
+src\components\Widgets\AppDrawerLauncher.tsx:24: } from '../../modules/desktop/adaptive';
+src\components\Widgets\AppDrawerLauncher.tsx:80: const { profile, tokens, getTokensForRegion } = useAdaptiveMaterial();
+src\components\Widgets\AppDrawerLauncher.tsx:101: // Derive Liquid Glass Adaptive Material Profile from Centralized Wallpaper Intelligence
+src\components\Widgets\AppDrawerLauncher.tsx:123: // 3. Adaptive Low-Alpha Substrate (0.12 - 0.24, normal target ~0.16)
+src\components\Widgets\AppDrawerLauncher.tsx:155: // 7. Adaptive Accent Tokens (Accessible, contrast-safe control state)
+src\components\Widgets\AppDrawerLauncher.tsx:156: const sanitized = sanitizeAdaptiveAccent(rawAccentCandidate);
+src\components\Widgets\AppDrawerLauncher.tsx:294: title="Toggle Adaptive Material Inspector (Shift+Alt+D)"
+src\components\Widgets\AppDrawerLauncher.tsx:420: <span className="font-semibold text-white tracking-wide">Adaptive Material Inspector</span>
+src\components\Widgets\WeatherWidget.tsx:11: import { useAdaptiveMaterial } from '../../modules/desktop/adaptive/useAdaptiveMaterial';
+src\components\Widgets\WeatherWidget.tsx:12: import { WallpaperRegionKey } from '../../modules/desktop/adaptive/wallpaperAnalysisTypes';
+src\components\Widgets\WeatherWidget.tsx:164: // CONSUME EXISTING WALLPAPER ADAPTIVE MATERIAL SYSTEM & SEMANTIC ROLES
+src\components\Widgets\WeatherWidget.tsx:166: const { tokens: globalTokens, getTokensForRegion } = useAdaptiveMaterial();
+src\components\Widgets\WeatherWidget.tsx:168: const adaptiveTokens = useMemo(() => {
+src\components\Widgets\WeatherWidget.tsx:175: const { heroGlass, internalSurface, typography, accent } = adaptiveTokens;
+src\components\Widgets\WeatherWidget.tsx:242: // DYNAMIC STYLING DERIVED FROM EXISTING ADAPTIVE MATERIAL ENGINE
+src\components\DesktopSimulatorModal.tsx:7: import { AdaptiveMaterialProvider } from '../modules/desktop/adaptive';
+=== AppDrawerLauncher ===
+C:\Users\admin\dilkush007\wallix-code\src\components\Widgets\AppDrawerLauncher.tsx
+=== tsconfig paths ===
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "experimentalDecorators": true,
+    "useDefineForClassFields": false,
+    "module": "ESNext",
+    "lib": [
+      "ES2022",
+      "DOM",
+      "DOM.Iterable"
+    ],
+    "skipLibCheck": true,
+    "moduleResolution": "bundler",
+    "isolatedModules": true,
+    "moduleDetection": "force",
+    "allowJs": true,
+    "jsx": "react-jsx",
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ]
+    },
+    "allowImportingTsExtensions": true,
+    "noEmit": true
+  },
+  "exclude": [
+    "node_modules",
+    "**/*.test.ts",
+    "**/*.test.tsx",
+    "src/services/validation/qualityGate.ts"
+  ],
+  "include": [
+    "src/**/*",
+    "validate.ts"
+  ]
+}
+=== systemBridgeContext exports ===
+127: export const SystemBridgeProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+662: export const useSystemBridge = (): SystemBridgeContextType => {
+
+C:\Users\admin\dilkush007\wallix-code\src\services\systemBridge\contracts.ts
+C:\Users\admin\dilkush007\wallix-code\src\services\systemBridge\HostBridgeService.ts
+C:\Users\admin\dilkush007\wallix-code\src\services\systemBridge\index.ts
+C:\Users\admin\dilkush007\wallix-code\src\services\systemBridge\SystemBridgeContext.tsx
+C:\Users\admin\dilkush007\wallix-code\src\services\systemBridge\types.ts
+C:\Users\admin\dilkush007\wallix-code\src\services\systemBridge\adapters\HostAdapter.ts
+C:\Users\admin\dilkush007\wallix-code\src\services\systemBridge\adapters\MockDevelopmentAdapter.ts
+C:\Users\admin\dilkush007\wallix-code\src\services\systemBridge\adapters\WebOnlyHostAdapter.ts
+C:\Users\admin\dilkush007\wallix-code\src\services\systemBridge\adapters\WindowsHostBridgeAdapter.ts
+C:\Users\admin\dilkush007\wallix-code\src\components\common\LivePreviewErrorBoundary.tsx
+C:\Users\admin\dilkush007\wallix-code\src\components\common\RuntimeSyncIndicator.tsx
+C:\Users\admin\dilkush007\wallix-code\src\components\common\WallpaperMedia.tsx
+C:\Users\admin\dilkush007\wallix-code\src\components\common\WallpaperThumb.tsx

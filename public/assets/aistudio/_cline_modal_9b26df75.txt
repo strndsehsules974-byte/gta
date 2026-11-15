@@ -1,0 +1,75 @@
+﻿=== AutomatedThemeInstallModal props ===
+3: import type { InstallSteps } from '../hooks/useChromeBridge';
+43: interface AutomatedThemeInstallModalProps {
+52:   stepStatuses?: InstallSteps;
+54:   error?: string | null;
+57: export const AutomatedThemeInstallModal: React.FC<AutomatedThemeInstallModalProps> = ({
+62:   stepStatuses,
+63:   error,
+82:   const isApplyDone = stepStatuses?.applied === 'done';
+126:               stepStatuses={stepStatuses}
+129:             {error && (
+131:                 {error}
+
+=== features/chrome-new-tab/extensionBridge.ts head 60 ===
+import JSZip from 'jszip';
+import { renderExtensionIconPng } from './extensionIcons';
+import { 
+  ChromeNewTabSettings, 
+  ChromeShortcut, 
+  SCHEMA_VERSION, 
+  DEFAULT_LAYOUT_SETTINGS,
+  sanitizeChromeSettings, 
+  sanitizeChromeShortcuts 
+} from './types';
+
+export const STORAGE_KEY = 'wallix_chrome_newtab_settings';
+export const SHORTCUTS_KEY = 'wallix_chrome_newtab_shortcuts';
+
+/**
+ * URL guard shared by the Studio bridge and the generated extension runtime.
+ * Only stable, publicly reachable HTTPS URLs (plus SVG-safe data:image) may
+ * cross into the extension â€” blob: URLs die with the tab that created them
+ * and must never be persisted into chrome.storage.local.
+ */
+export function isBridgeableWallpaperUrl(url: unknown): boolean {
+  if (typeof url !== 'string') return false;
+  const clean = url.trim();
+  if (!clean) return false;
+  if (/^blob:/i.test(clean)) return false;
+  return /^(https?:\/\/|data:image\/)/i.test(clean);
+}
+
+/** Stable HTTPS fallback used whenever a URL cannot cross the bridge. */
+export const BRIDGE_FALLBACK_WALLPAPER_URL =
+  'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=1920&q=85';
+
+export interface ExtensionBridgeStatus {
+  isExtensionDetected: boolean;
+  isStorageSaved: boolean;
+  lastSyncTime: string | null;
+  storageBackend: 'chrome.storage.local' | 'localStorage';
+}
+
+function getSafeOrigin(): string {
+  if (typeof window !== 'undefined' && window.location?.origin && window.location.origin !== 'null') {
+    return window.location.origin;
+  }
+  return '*';
+}
+
+/**
+ * Save settings to both chrome.storage.local (if running within an extension)
+ * and localStorage (for web app preview continuity).
+ */
+export async function saveChromeSettings(
+  settings: ChromeNewTabSettings,
+  shortcuts: ChromeShortcut[]
+): Promise<boolean> {
+  try {
+    const cleanSettings = sanitizeChromeSettings(settings);
+    const cleanShortcuts = sanitizeChromeShortcuts(shortcuts);
+
+    const payload = {
+      version: SCHEMA_VERSION,
+

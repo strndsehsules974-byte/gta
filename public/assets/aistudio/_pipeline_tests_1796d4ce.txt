@@ -1,0 +1,48 @@
+﻿PYCOMPILE_EXIT=0
+============================= test session starts =============================
+platform win32 -- Python 3.14.6, pytest-9.1.1, pluggy-1.7.0 -- C:\Users\admin\dilkush007\.venv\Scripts\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\admin\dilkush007\wallix-code
+collecting ... collected 38 items
+
+tests/test_agent_pipeline.py::TestBoardAllowlist::test_smart_agent_boards_are_exactly_the_two_approved PASSED [  2%]
+tests/test_agent_pipeline.py::TestBoardAllowlist::test_parallel_agent_boards_are_exactly_the_two_approved PASSED [  5%]
+tests/test_agent_pipeline.py::TestBoardAllowlist::test_no_unapproved_urls_in_either_agent PASSED [  7%]
+tests/test_agent_pipeline.py::TestDuplicatePinDetection::test_mark_and_load_seen_pins PASSED [ 10%]
+tests/test_agent_pipeline.py::TestDuplicatePinDetection::test_duplicate_pin_is_skipped PASSED [ 13%]
+tests/test_agent_pipeline.py::TestPinMediaResolver::test_resolve_pin_media_from_html_valid_video PASSED [ 15%]
+tests/test_agent_pipeline.py::TestPinMediaResolver::test_resolve_pin_media_from_html_missing_media PASSED [ 18%]
+tests/test_agent_pipeline.py::TestPinMediaResolver::test_resolve_pin_media_from_html_invalid_response PASSED [ 21%]
+tests/test_agent_pipeline.py::TestPinMediaResolver::test_resolve_pin_media_from_html_alt_image_structure PASSED [ 23%]
+tests/test_agent_pipeline.py::TestPinMediaResolver::test_resolve_pin_media_browser_fallback_for_hls PASSED [ 26%]
+tests/test_agent_pipeline.py::TestSHA256::test_sha256_deterministic PASSED [ 28%]
+tests/test_agent_pipeline.py::TestSHA256::test_sha256_differs_for_different_content PASSED [ 31%]
+tests/test_agent_pipeline.py::TestSHA256::test_sha256_matches_standard_library PASSED [ 34%]
+tests/test_agent_pipeline.py::TestInvalidVideo::test_validate_missing_file PASSED [ 36%]
+tests/test_agent_pipeline.py::TestInvalidVideo::test_validate_corrupt_file_is_not_valid PASSED [ 39%]
+tests/test_agent_pipeline.py::TestInvalidVideo::test_probe_video_info_invalid_file PASSED [ 42%]
+tests/test_agent_pipeline.py::TestLowResolution::test_classify_below_desktop_minimum PASSED [ 44%]
+tests/test_agent_pipeline.py::TestLowResolution::test_classify_desktop_ok PASSED [ 47%]
+tests/test_agent_pipeline.py::TestLowResolution::test_classify_portrait_quarantined PASSED [ 50%]
+tests/test_agent_pipeline.py::TestLowResolution::test_validate_low_resolution_rejected PASSED [ 52%]
+tests/test_agent_pipeline.py::TestQuarantine::test_quarantine_file_moves_to_quarantine_dir PASSED [ 55%]
+tests/test_agent_pipeline.py::TestQuarantine::test_quarantine_preserves_content PASSED [ 57%]
+tests/test_agent_pipeline.py::TestAtomicStateWrites::test_save_and_load_json_round_trip PASSED [ 60%]
+tests/test_agent_pipeline.py::TestAtomicStateWrites::test_load_json_missing_file_returns_default PASSED [ 63%]
+tests/test_agent_pipeline.py::TestAtomicStateWrites::test_load_json_corrupt_file_returns_default PASSED [ 65%]
+tests/test_agent_pipeline.py::TestAtomicStateWrites::test_load_seen_returns_set PASSED [ 68%]
+tests/test_agent_pipeline.py::TestProcessLock::test_lock_acquire_and_release PASSED [ 71%]
+tests/test_agent_pipeline.py::TestProcessLock::test_lock_rejects_second_instance PASSED [ 73%]
+tests/test_agent_pipeline.py::TestProcessLock::test_lock_reclaims_stale_lock PASSED [ 76%]
+tests/test_agent_pipeline.py::TestProcessLock::test_lock_release_idempotent PASSED [ 78%]
+tests/test_agent_pipeline.py::TestProcessLock::test_lock_concurrent_processes PASSED [ 81%]
+tests/test_agent_pipeline.py::TestProcessLock::test_parallel_agent_lock_independent PASSED [ 84%]
+tests/test_agent_pipeline.py::TestVideoQualityRealFFmpeg::test_valid_video_passes_validation PASSED [ 86%]
+tests/test_agent_pipeline.py::TestVideoQualityRealFFmpeg::test_valid_video_desktop_suitable PASSED [ 89%]
+tests/test_agent_pipeline.py::TestVideoQualityRealFFmpeg::test_file_integrity_check PASSED [ 92%]
+tests/test_agent_pipeline.py::TestVideoQualityRealFFmpeg::test_file_integrity_rejects_too_small PASSED [ 94%]
+tests/test_agent_pipeline.py::TestCLIOptions::test_no_no_sync_supabase_flag PASSED [ 97%]
+tests/test_agent_pipeline.py::TestCLIOptions::test_parallel_agent_has_no_download_flag PASSED [100%]
+
+============================= 38 passed in 8.67s ==============================
+FULL_PYTEST_EXIT=0

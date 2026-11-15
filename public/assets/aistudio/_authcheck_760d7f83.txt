@@ -1,0 +1,5 @@
+profile_exists=True
+profile_locked=False
+landed_path=/
+logged_in=false
+login_text_visible=false

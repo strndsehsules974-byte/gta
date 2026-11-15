@@ -1,0 +1,205 @@
+﻿=== HEAD WindowsAppWindow imports ===
+
+import React, { useState, useRef, useEffect, useMemo } from 'react';
+import { WallpaperThumb } from '../../common/WallpaperThumb';
+import { motion, AnimatePresence } from 'motion/react';
+import { 
+  Monitor,
+  Folder,
+  Layers,
+  Globe,
+  Compass,
+  Music,
+  Search,
+  ExternalLink,
+  RotateCw,
+  Lock,
+  ChevronRight,
+} from 'lucide-react';
+import { Wallpaper } from '../../../types';
+  appId,
+  lifecycleState,
+  isActive,
+  isMaximized,
+  dockOrigin,
+  exitMode,
+  onFocus,
+  onMinimize,
+  onClose,
+  onToggleMaximize,
+  onAnimationComplete,
+  wallpapers,
+  activeWallpaper,
+=== HEAD WindowsCustomizationSidebar imports ===
+import React from 'react';
+import { WallpaperThumb } from '../../common/WallpaperThumb';
+import { 
+  Move,
+  RotateCcw,
+  HardDrive,
+  FolderOpen,
+  Network,
+  Settings,
+  Cpu,
+  Globe,
+  Code,
+  Laptop,
+  Monitor,
+  Camera,
+  Sun,
+} from 'lucide-react';
+import { Wallpaper } from '../../../types';
+import { WindowsEnvironmentConfig, DesktopIconKey, DEFAULT_DESKTOP_ICONS } from './types';
+  config,
+  onChangeConfig,
+  wallpapers,
+  activeWallpaper,
+  onSelectWallpaper,
+  selectedIconId,
+  activeTab,
+  onSelectTab,
+=== HEAD WindowsDesktopCanvas imports ===
+import React, { useState, useRef, useEffect } from 'react';
+import { AnimatePresence } from 'motion/react';
+import { Wallpaper } from '../../../types';
+import { WindowsEnvironmentConfig } from './types';
+import { WindowsTopSystemBar } from './WindowsTopSystemBar';
+import { WindowsTaskbar } from './WindowsTaskbar';
+import { WindowsTrayFlyouts } from './WindowsTrayFlyouts';
+import { WindowsAppWindow, WindowLifecycleState } from './WindowsAppWindow';
+import { AppDrawerLauncher } from '../../Widgets/AppDrawerLauncher';
+import { resolveWallpaperMedia } from '../../../utils/mediaType';
+  config,
+  onChangeConfig,
+  activeWallpaper,
+  wallpapers,
+  onSelectWallpaper,
+  selectedIconId,
+  onSelectIcon,
+  onOpenSettingsTab,
+=== HEAD WindowsTaskbar imports ===
+import React, { useState, useEffect, useRef, useCallback } from 'react';
+import { motion, useMotionValue, useTransform, useSpring, type MotionValue } from 'motion/react';
+import { WindowsEnvironmentConfig } from './types';
+  app,
+  index,
+  mouseX,
+  magnificationEnabled,
+  active,
+  isBouncing,
+  onClick,
+  onSetRef,
+  config,
+  activeAppWindow,
+  onOpenAppWindow,
+  onToggleAppDrawer,
+=== HEAD WindowsTopSystemBar imports ===
+import React from 'react';
+import { WindowsEnvironmentConfig } from './types';
+import { TopBar } from '../../topbar/TopBar';
+=== HEAD WindowsTrayFlyouts imports ===
+import React, { useState } from 'react';
+import { WallpaperThumb } from '../../common/WallpaperThumb';
+import { 
+  ChevronRight,
+  Bluetooth,
+  Moon,
+  Sun,
+  Shield,
+} from 'lucide-react';
+import { Wallpaper } from '../../../types';
+  activeFlyout,
+  onClose,
+  onOpenAppWindow,
+  wallpapers,
+  onSelectWallpaper,
+  clockFormat,
+=== HEAD DesktopShellSurfaceController 130-215 ===
+
+      {/* ======================================================================= */}
+      {/* CENTRALIZED SHELL SURFACES VIEWPORT LAYER                               */}
+      {/* ======================================================================= */}
+      <div 
+        ref={surfaceContainerRef} 
+        id="wallix-desktop-shell-surface-layer" 
+        className="fixed inset-0 pointer-events-none z-[9999]"
+      >
+        <AnimatePresence mode="wait">
+          {/* 1. Windows Network Flyout */}
+          {activeSurface === 'wifi' && (
+            <WindowsNetworkShellSurface
+              key="shell-surface-wifi"
+              onClose={closeSurface}
+              onOpenSettings={onOpenSettings}
+            />
+          )}
+
+          {/* 2. Windows Sound / Audio Flyout */}
+          {activeSurface === 'volume' && (
+            <div className="absolute top-12 right-4 sm:right-6 pointer-events-auto">
+              <WindowsAudioShellSurface
+                key="shell-surface-audio"
+                onClose={closeSurface}
+                onOpenSettings={onOpenSettings}
+              />
+            </div>
+          )}
+
+          {/* 3. Windows Power & Battery Flyout */}
+          {activeSurface === 'battery' && (
+            <div className="absolute top-12 right-4 sm:right-6 pointer-events-auto">
+              <WindowsPowerShellSurface
+                key="shell-surface-battery"
+                onClose={closeSurface}
+                onOpenSettings={onOpenSettings}
+              />
+            </div>
+          )}
+
+          {/* 4. Windows 11 Quick Settings Flyout */}
+          {activeSurface === 'quickSettings' && (
+            <div className="absolute top-12 right-4 sm:right-6 pointer-events-auto">
+              <WindowsQuickSettingsShellSurface
+                key="shell-surface-quick-settings"
+                onClose={closeSurface}
+                onOpenSettings={onOpenSettings}
+                onOpenWifiShell={() => openSurface('wifi')}
+              />
+            </div>
+          )}
+
+          {/* 5. Windows Date & Time / Calendar Flyout */}
+          {activeSurface === 'calendar' && (
+            <div className="absolute top-12 right-4 sm:right-6 pointer-events-auto">
+              <WindowsCalendarShellSurface
+                key="shell-surface-calendar"
+                onClose={closeSurface}
+                onOpenCalendarApp={() => {
+                  closeSurface();
+                  onOpenApp?.('calendar');
+                }}
+                onOpenSettings={onOpenSettings}
+              />
+            </div>
+          )}
+
+          {/* 6. Windows 10 Action Center Flyout */}
+          {activeSurface === 'notifications' && (
+            <WindowsActionCenterShellSurface
+              key="shell-surface-action-center"
+              onClose={closeSurface}
+              onOpenApp={onOpenApp}
+              onOpenSettings={onOpenSettings}
+              onOpenNetworkFlyout={() => openSurface('wifi')}
+            />
+          )}
+        </AnimatePresence>
+
+        {/* 7. Windows Search Shell Modal */}
+        <WindowsSearchShellSurface
+          isOpen={activeSurface === 'search'}
+          onClose={closeSurface}
+          onOpenApp={onOpenApp}
+
+
+

@@ -1,0 +1,514 @@
+﻿=== PWD ===
+C:\Users\admin\dilkush007
+=== TOPLEVEL (root) ===
+C:/Users/admin/dilkush007
+
+=== TOPLEVEL (wallix-code) ===
+C:/Users/admin/dilkush007/wallix-code
+
+=== STATUS (root) ===
+?? .kilo/
+?? _b_build.txt
+?? _b_lint.txt
+?? _b_lint_exit.txt
+?? _deps.txt
+?? _dev-vite.log
+?? _dev.log
+?? _dev_server_log.txt
+?? _e2e_files.txt
+?? _e2e_help.txt
+?? _e2e_net.txt
+?? _e2e_pid.txt
+?? _e2e_pins.txt
+?? _e2e_probe.py
+?? _e2e_recon.txt
+?? _e2e_recon2.txt
+?? _e2e_run.err
+?? _e2e_run.log
+?? _e2e_state.txt
+?? _fix-tsc.log
+?? _fix-tsc2.log
+?? _lint-fix.log
+?? _lint-fix2.log
+?? _lint-phase2.log
+?? _lint-phase3.log
+?? _lint-phase45.log
+?? _p3-tsc.log
+?? _p45-tsc.log
+?? _public.txt
+?? _recovery1.ps1
+?? _recovery2.ps1
+?? _resume-state.txt
+?? _resume2.txt
+?? _resume3.txt
+?? _resume4.txt
+?? _scripts.txt
+?? _usage.txt
+?? _vdev.err.log
+?? _vdev.out.log
+?? _videos.txt
+?? _vite-build-fix.log
+?? _vite5173.err
+?? _vite5173.log
+?? _which.txt
+?? _wrap.txt
+?? baseline-run.cmd
+?? baseline-tsc.txt
+?? baseline-vitest.txt
+?? cleanup-log.txt
+?? ct-run-latest.txt
+?? ct-run.mjs
+?? diag-env.txt
+?? diag-watermark-out.txt
+?? diag-watermark.mts
+?? docs/
+?? find-ct-done.txt
+?? find-ct.txt
+?? fix-A-qualitygate.txt
+?? fix-lint.txt
+?? gallery-dl/
+?? ls-root-done.txt
+?? ls-root.txt
+?? node_modules/
+?? nodeversion.txt
+?? package-lock.json
+?? package.json
+?? pinterest_persistent_profile/
+?? postfix-tsc.txt
+?? read_lines.py
+?? tsc-done.txt
+?? tsc-out.txt
+?? uitsc.txt
+?? uitsc2.txt
+?? uitsc3.txt
+?? verify-1-counter.txt
+?? verify-1-done.txt
+?? verify-A-counter.txt
+?? verify-B-qualitygate.txt
+?? verify-C-npmtest.txt
+?? verify-D-audit.txt
+?? verify-D-lint.txt
+?? verify-D2-lint.txt
+?? verify-E-audit.txt
+?? verify-E-dryrun.txt
+?? verify-F-build.txt
+?? verify-F-scan.txt
+?? verify-G-smoke.txt
+?? verify-H-diff-name.txt
+?? verify-H-diff-stat.txt
+?? verify-H-status.txt
+?? verify-R-ct-diff.txt
+?? verify-R-diffname2.txt
+?? verify-R-diffstat2.txt
+?? verify-R-incoming.txt
+?? verify-R-incoming2.txt
+?? verify-R-lint.txt
+?? verify-R-lint2.txt
+?? verify-R-parent4k.txt
+?? verify-R-s1-canon.txt
+?? verify-R-s1-canonical.txt
+?? verify-R-s1-dot.txt
+?? verify-R-s1-loc.txt
+?? verify-R-s1-loc2.txt
+?? verify-R-s1-resolve.txt
+?? verify-R-s3-log.txt
+?? verify-R-s3-log2.txt
+?? verify-R-s3-status.txt
+?? verify-R-s3-status2.txt
+?? verify-R-s3-top.txt
+?? verify-R-s3-top2.txt
+?? verify-R-s4-diffname.txt
+?? verify-R-s4-diffstat.txt
+?? verify-R-s5-prefix.txt
+?? verify-R-s5-root.txt
+?? verify-R-s6-gate.txt
+?? verify-R-s6-qgate.txt
+?? verify-R-s7-full.txt
+?? verify-R-slow.txt
+?? verify-R-step2-ct.txt
+?? verify-R-step2-git.txt
+?? verify-R-step2-loc.txt
+?? verify-R-step2-loc2.txt
+?? verify-R-step2-nm.txt
+?? verify-R-step2-pkg.txt
+?? verify-R-step2-qg.txt
+?? verify-build.txt
+?? verify-run.cmd
+?? verify-vitest-postfix.txt
+?? vit-gate-done.txt
+?? vit-gate.txt
+?? vit-unit-done.txt
+?? vit-unit.txt
+?? wallix-code/
+?? wallix-studio/
+
+=== STATUS (wallix-code) ===
+ M .env.example
+ M .gitignore
+ M AGENTS.md
+ M extension/manifest.json
+ M extension/newtab.html
+ M extension/newtab.js
+ M extension/storage.js
+ M extension/styles.css
+ M p1.txt
+ M package-lock.json
+ M package.json
+ M server.ts
+ M src/App.tsx
+ M src/components/ChromeExtensionModal.tsx
+ M src/components/ChromeExtensionStudioView.tsx
+ M src/components/CollectionsView.tsx
+ M src/components/DesktopSimulatorModal.tsx
+ M src/components/HeroCarousel.tsx
+ M src/components/HomeDashboardView.tsx
+ M src/components/LiveWallpaperStudioView.tsx
+ M src/components/LiveWallpapersView.tsx
+ M src/components/SearchView.tsx
+ M src/components/Sidebar.tsx
+ M src/components/TargetWorkspaces/WindowsTargetWorkspace.tsx
+ D src/components/TargetWorkspaces/windows/WindowsAppWindow.tsx
+ D src/components/TargetWorkspaces/windows/WindowsCustomizationSidebar.tsx
+ D src/components/TargetWorkspaces/windows/WindowsDesktopCanvas.tsx
+ D src/components/TargetWorkspaces/windows/WindowsTaskbar.tsx
+ D src/components/TargetWorkspaces/windows/WindowsTopSystemBar.tsx
+ D src/components/TargetWorkspaces/windows/WindowsTrayFlyouts.tsx
+ D src/components/TargetWorkspaces/windows/types.ts
+ M src/components/Upload/ContextualUploader.tsx
+ M src/components/Upload/UploadZone.tsx
+ M src/components/WallpaperCard.tsx
+ M src/components/WallpaperGrid.tsx
+ M src/components/WallpaperModal.tsx
+ M src/components/common/WallpaperMedia.tsx
+ M src/components/topbar/TopBar.tsx
+ M src/components/topbar/actionCenter/WindowsActionCenterFlyout.tsx
+ M src/components/topbar/actionCenter/WindowsNetworkFlyout.tsx
+ M src/components/topbar/actionCenter/WindowsQuickActionTile.tsx
+ M src/desktop/backgroundEngine.ts
+ M src/index.css
+ M src/modules/chrome/ChromeControlsPanel.tsx
+ M src/modules/chrome/ChromeNewTabPreview.tsx
+ D src/modules/chrome/ChromeSection.tsx
+ D src/modules/chrome/WeatherWidget.tsx
+ M src/modules/chrome/extensionBridge.ts
+ M src/modules/chrome/types.ts
+ D src/modules/chrome/wallpaperPresets.ts
+ D src/modules/desktop/shell/DesktopShellSurfaceController.tsx
+ D src/modules/desktop/shell/LiquidGlassShellContainer.tsx
+ D src/modules/desktop/shell/WindowsActionCenterShellSurface.tsx
+ D src/modules/desktop/shell/WindowsAudioShellSurface.tsx
+ D src/modules/desktop/shell/WindowsCalendarShellSurface.tsx
+ D src/modules/desktop/shell/WindowsNetworkShellSurface.tsx
+ D src/modules/desktop/shell/WindowsPowerShellSurface.tsx
+ D src/modules/desktop/shell/WindowsQuickSettingsShellSurface.tsx
+ D src/modules/desktop/shell/WindowsSearchShellSurface.tsx
+ D src/modules/desktop/shell/index.ts
+ D src/modules/desktop/shell/shellMotion.ts
+ D src/modules/desktop/shell/shellSurfaceTypes.ts
+ M src/modules/wallpaper/WallpaperSection.tsx
+ M src/server/connector/discovery.ts
+ M src/server/connector/nativeAppBridge.ts
+ M src/server/connector/router.ts
+ M src/server/connector/security.ts
+ M src/server/connector/types.ts
+ M src/services/validation/__tests__/fixtures.ts
+ M src/services/validation/__tests__/qualityGate.test.ts
+ M src/services/validation/aspectRatioValidation.ts
+ M src/services/validation/corruptionCheck.ts
+ M src/services/validation/ffmpegBin.ts
+ M src/services/validation/resolutionValidation.ts
+ M src/services/validation/rotationNormalizer.ts
+ M src/services/validation/thumbnailValidation.ts
+ M src/services/validation/watermarkDetection.ts
+ M src/services/wallpapers/supabaseWallpaperService.ts
+ M src/services/weather/index.ts
+ M src/types.ts
+ M src/types/theme.ts
+ M src/utils/extensionZipExporter.ts
+ M src/utils/galleryDedup.ts
+ M src/utils/mediaType.ts
+ M src/vite-env.d.ts
+ M tests/validation.test.ts
+ M tsconfig.json
+ M v1.txt
+ M vite.config.ts
+ M vitest.config.ts
+?? .vscode/
+?? FILE_LIST_CATEGORIZED.txt
+?? QUALITY_AUDIT_REPORT.md
+?? README.md
+?? WALLIX_MASTER_BLUEPRINT.md
+?? __pycache__/
+?? _check_downloads.py
+?? _check_seen.py
+?? _hero-dom.html
+?? _patch10.py
+?? _patch3.py
+?? _patch5.py
+?? _patch6.py
+?? _patch7.py
+?? _patch8.py
+?? _patch9.py
+?? _read_output.py
+?? _read_output10.py
+?? _read_output2.py
+?? _read_output3.py
+?? _read_output4.py
+?? _read_output5.py
+?? _read_output6.py
+?? _read_output7.py
+?? _read_output8.py
+?? _read_output9.py
+?? _run_output.txt
+?? _run_output10.txt
+?? _run_output11.txt
+?? _run_output2.txt
+?? _run_output4.txt
+?? _run_output5.txt
+?? _run_output6.txt
+?? _run_output7.txt
+?? _run_output8.txt
+?? _run_output9.txt
+?? _test_dl.py
+?? _test_edit.py
+?? _test_gallerydl.py
+?? _test_gdl_board.py
+?? _test_gdl_board_dl.py
+?? _test_gdl_structure.py
+?? _test_yt_long.py
+?? _test_ytdlp.py
+?? _ui-dom.html
+?? _verify.py
+?? _verify2.py
+?? _verify3.py
+?? _verify4.py
+?? add_resolve_pin.py
+?? agent_brain.json
+?? agent_status.json
+?? agent_uploader.py
+?? apply-migration-api.mjs
+?? apply-migration.mjs
+?? apply_patch.py
+?? apply_patch2.py
+?? apply_patch3.py
+?? apply_patch4.py
+?? autonomous_client_commander.py
+?? build-log.txt
+?? build-output.txt
+?? check-schema.mjs
+?? check_patch.py
+?? client_inbox.json
+?? ct.txt
+?? ct2.txt
+?? ct3.txt
+?? docs/
+?? downloads/
+?? extension/icons/
+?? extensions/
+?? fix_exit.py
+?? fix_login.py
+?? gdl_out.txt
+?? gdl_probe.json
+?? newtab.html
+?? notify.json
+?? page2.html
+?? page_dump.html
+?? page_final.html
+?? panic_mode_client.py
+?? parallel_multi_agent.playwright_backup.py
+?? parallel_multi_agent.py
+?? pin_states.json
+?? probe_pinterest_api.py
+?? profile-pipeline.ts
+?? public/wallpapers/
+?? receiver_agent.py
+?? rejected_pins.json
+?? run-migration-check.ts
+?? run-migration.ts
+?? scan3.txt
+?? scripts/
+?? seen_pins.json
+?? setup_and_run.bat
+?? smart_pinterest_agent.py
+?? smart_run_log.txt
+?? smart_run_log2.txt
+?? smart_run_log3.txt
+?? smart_run_log4.txt
+?? src/components/AutomatedThemeInstallModal.tsx
+?? src/components/Dock.tsx
+?? src/components/ResetThemeConfirmModal.tsx
+?? src/components/Toast.tsx
+?? src/components/WeatherWidget.tsx
+?? src/components/glassWidgets.adapters.ts
+?? src/components/ui/
+?? src/config/features.config.ts
+?? src/data/localWallpapers.ts
+?? src/data/mediaRegistry.json
+?? src/data/mock/
+?? src/features/
+?? src/hooks/
+?? src/newtab.tsx
+?? src/newtab/
+?? src/server/connector/supabaseWallpaper.ts
+?? src/server/connector/uploadRouter.ts
+?? src/server/connector/validationSchemas.ts
+?? src/server/httpsSetup.ts
+?? src/services/themeEngineService.ts
+?? src/services/weather/useWeatherSnapshot.ts
+?? src/services/weather/weatherSnapshot.test.ts
+?? src/services/weather/weatherSnapshot.ts
+?? src/vite-config.test.ts
+?? src/workspace/
+?? start-dev.bat
+?? start-dev.ps1
+?? tasks.md
+?? test_output.txt
+?? tests/__pycache__/
+?? tests/test_agent_pipeline.py
+?? ts-error-test.txt
+?? ts-errors2.txt
+?? ts-errors3.txt
+?? ts-errors4.txt
+?? tsc-out.txt
+?? tsc-output.txt
+?? tsc-output2.txt
+?? tsc-output3.txt
+?? verify_log.txt
+?? verify_log2.txt
+?? video_quality.py
+?? vitest-bridge.txt
+?? vitest-exit.txt
+?? vitest-output.txt
+?? vitest-result.json
+?? vitest-run.txt
+?? vitest_out.txt
+?? wallix_live_pin_fix.ipynb
+?? wallix_secure_vault/
+
+=== DIFF STAT (root) ===
+
+=== STAGED STAT (root) ===
+
+=== DIFF STAT (wallix-code) ===
+git : warning: in the working copy of 'package-lock.json', LF will be replaced by CRLF 
+the next time Git touches it
+At C:\Users\admin\dilkush007\_recovery1.ps1:17 char:10
++ $out += (git -C wallix-code diff --stat 2>&1 | Out-String)
++          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (warning: in the... Git touches it:String) 
+    [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+warning: in the working copy of 'package.json', LF will be replaced by CRLF the next 
+time Git touches it
+warning: in the working copy of 'server.ts', LF will be replaced by CRLF the next time 
+Git touches it
+warning: in the working copy of 'src/components/ChromeExtensionStudioView.tsx', LF 
+will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/components/common/WallpaperMedia.tsx', LF will be 
+replaced by CRLF the next time Git touches it
+warning: in the working copy of 
+'src/services/validation/__tests__/qualityGate.test.ts', LF will be replaced by CRLF 
+the next time Git touches it
+warning: in the working copy of 'src/services/validation/ffmpegBin.ts', LF will be 
+replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/services/wallpapers/supabaseWallpaperService.ts', 
+LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/utils/galleryDedup.ts', LF will be replaced by 
+CRLF the next time Git touches it
+warning: in the working copy of 'src/utils/mediaType.ts', LF will be replaced by CRLF 
+the next time Git touches it
+ .env.example                                       |   22 +
+ .gitignore                                         |   35 +
+ AGENTS.md                                          |   31 +
+ extension/manifest.json                            |   10 +-
+ extension/newtab.html                              |   30 +-
+ extension/newtab.js                                |  178 +-
+ extension/storage.js                               |    4 +-
+ extension/styles.css                               |  188 +-
+ p1.txt                                             |  Bin 4142 -> 613 bytes
+ package-lock.json                                  |  768 ++++-
+ package.json                                       |   24 +-
+ server.ts                                          |  184 +-
+ src/App.tsx                                        |  161 +-
+ src/components/ChromeExtensionModal.tsx            |   16 +-
+ src/components/ChromeExtensionStudioView.tsx       | 1142 ++++----
+ src/components/CollectionsView.tsx                 |    3 -
+ src/components/DesktopSimulatorModal.tsx           |    7 +-
+ src/components/HeroCarousel.tsx                    |   39 +-
+ src/components/HomeDashboardView.tsx               |   21 +-
+ src/components/LiveWallpaperStudioView.tsx         |   31 +-
+ src/components/LiveWallpapersView.tsx              |    3 -
+ src/components/SearchView.tsx                      |    3 -
+ src/components/Sidebar.tsx                         |   41 +-
+ .../TargetWorkspaces/WindowsTargetWorkspace.tsx    |   14 +-
+ .../TargetWorkspaces/windows/WindowsAppWindow.tsx  |  630 ----
+ .../windows/WindowsCustomizationSidebar.tsx        | 1002 -------
+ .../windows/WindowsDesktopCanvas.tsx               |  409 ---
+ .../TargetWorkspaces/windows/WindowsTaskbar.tsx    |  423 ---
+ .../windows/WindowsTopSystemBar.tsx                |   17 -
+ .../windows/WindowsTrayFlyouts.tsx                 |  387 ---
+ src/components/TargetWorkspaces/windows/types.ts   |  163 --
+ src/components/Upload/ContextualUploader.tsx       |  186 +-
+ src/components/Upload/UploadZone.tsx               |  248 +-
+ src/components/WallpaperCard.tsx                   |   76 +-
+ src/components/WallpaperGrid.tsx                   |   68 +-
+ src/components/WallpaperModal.tsx                  |   20 +-
+ src/components/common/WallpaperMedia.tsx           |   36 +-
+ src/components/topbar/TopBar.tsx                   |   18 +-
+ .../actionCenter/WindowsActionCenterFlyout.tsx     |    6 +-
+ .../topbar/actionCenter/WindowsNetworkFlyout.tsx   |    4 +-
+ .../topbar/actionCenter/WindowsQuickActionTile.tsx |    2 +-
+ src/desktop/backgroundEngine.ts                    |   13 +-
+ src/index.css                                      |  511 ++++
+ src/modules/chrome/ChromeControlsPanel.tsx         | 1714 +----------
+ src/modules/chrome/ChromeNewTabPreview.tsx         | 2322 +--------------
+ src/modules/chrome/ChromeSection.tsx               |  684 -----
+ src/modules/chrome/WeatherWidget.tsx               |  264 --
+ src/modules/chrome/extensionBridge.ts              | 3048 +-------------------
+ src/modules/chrome/types.ts                        |  387 +--
+ src/modules/chrome/wallpaperPresets.ts             |  266 --
+ .../shell/DesktopShellSurfaceController.tsx        |  221 --
+ .../desktop/shell/LiquidGlassShellContainer.tsx    |  188 --
+ .../shell/WindowsActionCenterShellSurface.tsx      |   10 -
+ .../desktop/shell/WindowsAudioShellSurface.tsx     |  218 --
+ .../desktop/shell/WindowsCalendarShellSurface.tsx  |  398 ---
+ .../desktop/shell/WindowsNetworkShellSurface.tsx   |   10 -
+ .../desktop/shell/WindowsPowerShellSurface.tsx     |  236 --
+ .../shell/WindowsQuickSettingsShellSurface.tsx     |  336 ---
+ .../desktop/shell/WindowsSearchShellSurface.tsx    |  401 ---
+ src/modules/desktop/shell/index.ts                 |   12 -
+ src/modules/desktop/shell/shellMotion.ts           |   42 -
+ src/modules/desktop/shell/shellSurfaceTypes.ts     |   47 -
+ src/modules/wallpaper/WallpaperSection.tsx         |   44 +-
+ src/server/connector/discovery.ts                  |   11 +-
+ src/server/connector/nativeAppBridge.ts            |   24 +-
+ src/server/connector/router.ts                     |  130 +-
+ src/server/connector/security.ts                   |   31 +-
+ src/server/connector/types.ts                      |    6 +-
+ src/services/validation/__tests__/fixtures.ts      |   28 +-
+ .../validation/__tests__/qualityGate.test.ts       |   86 +-
+ src/services/validation/aspectRatioValidation.ts   |   19 +
+ src/services/validation/corruptionCheck.ts         |   19 +-
+ src/services/validation/ffmpegBin.ts               |    7 +-
+ src/services/validation/resolutionValidation.ts    |   13 +
+ src/services/validation/rotationNormalizer.ts      |    9 +
+ src/services/validation/thumbnailValidation.ts     |   18 +-
+ src/services/validation/watermarkDetection.ts      |   16 +
+ .../wallpapers/supabaseWallpaperService.ts         |   77 +-
+ src/services/weather/index.ts                      |    2 +
+ src/types.ts                                       |    2 +
+ src/types/theme.ts                                 |   76 +
+ src/utils/extensionZipExporter.ts                  |   15 +-
+ src/utils/galleryDedup.ts                          |   29 +-
+ src/utils/mediaType.ts                             |   12 +-
+ src/vite-env.d.ts                                  |   17 -
+ tests/validation.test.ts                           |    2 +-
+ tsconfig.json                                      |    2 +-
+ v1.txt                                             |  Bin 2100 -> 402 bytes
+ vite.config.ts                                     |   42 +-
+ vitest.config.ts                                   |   14 +-
+ 90 files changed, 3612 insertions(+), 15117 deletions(-)
+
+=== STAGED STAT (wallix-code) ===
+

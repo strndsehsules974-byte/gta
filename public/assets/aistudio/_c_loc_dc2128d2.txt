@@ -1,0 +1,24 @@
+﻿=== systemBridge ===
+C:\Users\admin\dilkush007\wallix-code\src\services\systemBridge\SystemBridgeContext.tsx
+=== desktopAdaptive / modulesdesktopadaptive ===
+=== WallpaperThumb ===
+C:\Users\admin\dilkush007\wallix-code\src\components\common\WallpaperThumb.tsx
+=== WindowsEnvironmentConfig decl ===
+C:\Users\admin\dilkush007\wallix-code\src\components\TargetWorkspaces\WindowsTargetWorkspace.tsx:24: type WindowsEnvironmentConfig = any;
+C:\Users\admin\dilkush007\wallix-code\src\components\TargetWorkspaces\WindowsTargetWorkspace.tsx:68: const [windowsConfig, setWindowsConfig] = useState<WindowsEnvironmentConfig>(() => {
+C:\Users\admin\dilkush007\wallix-code\src\components\DesktopSimulatorModal.tsx:11: type WindowsEnvironmentConfig = any;
+C:\Users\admin\dilkush007\wallix-code\src\components\DesktopSimulatorModal.tsx:48: const [windowsConfig, setWindowsConfig] = useState<WindowsEnvironmentConfig>(() => {
+C:\Users\admin\dilkush007\wallix-code\src\features\environments\windows-11-customizer\components\TargetWorkspaces\windows\WindowsCustomizationSidebar.tsx:35: import { WindowsEnvironmentConfig, DesktopIconKey, DEFAULT_DESKTOP_ICONS } from './types';
+C:\Users\admin\dilkush007\wallix-code\src\features\environments\windows-11-customizer\components\TargetWorkspaces\windows\WindowsCustomizationSidebar.tsx:38: config: WindowsEnvironmentConfig;
+C:\Users\admin\dilkush007\wallix-code\src\features\environments\windows-11-customizer\components\TargetWorkspaces\windows\WindowsCustomizationSidebar.tsx:39: onChangeConfig: (newConfig: WindowsEnvironmentConfig) => void;
+C:\Users\admin\dilkush007\wallix-code\src\features\environments\windows-11-customizer\components\TargetWorkspaces\windows\WindowsDesktopCanvas.tsx:4: import { WindowsEnvironmentConfig } from './types';
+C:\Users\admin\dilkush007\wallix-code\src\features\environments\windows-11-customizer\components\TargetWorkspaces\windows\WindowsDesktopCanvas.tsx:13: config: WindowsEnvironmentConfig;
+C:\Users\admin\dilkush007\wallix-code\src\features\environments\windows-11-customizer\components\TargetWorkspaces\windows\WindowsDesktopCanvas.tsx:14: onChangeConfig: (newConfig: WindowsEnvironmentConfig) => void;
+C:\Users\admin\dilkush007\wallix-code\src\features\environments\windows-11-customizer\components\TargetWorkspaces\windows\WindowsTaskbar.tsx:3: import { WindowsEnvironmentConfig } from './types';
+C:\Users\admin\dilkush007\wallix-code\src\features\environments\windows-11-customizer\components\TargetWorkspaces\windows\WindowsTaskbar.tsx:6: config: WindowsEnvironmentConfig;
+C:\Users\admin\dilkush007\wallix-code\src\features\environments\windows-11-customizer\components\TargetWorkspaces\windows\WindowsTopSystemBar.tsx:2: import { WindowsEnvironmentConfig } from './types';
+C:\Users\admin\dilkush007\wallix-code\src\features\environments\windows-11-customizer\components\TargetWorkspaces\windows\WindowsTopSystemBar.tsx:6: config: WindowsEnvironmentConfig;
+C:\Users\admin\dilkush007\wallix-code\src\types\theme.ts:16: export interface Wallpaper {
+C:\Users\admin\dilkush007\wallix-code\src\types\theme.ts:112: export interface Wallpaper {
+C:\Users\admin\dilkush007\wallix-code\src\types.ts:12: export interface Wallpaper {
+

@@ -1,0 +1,11 @@
+﻿=== git diff useChromeBridge.tsx ===
+
+=== HEAD version of useChromeBridge (if tracked) ===
+git : fatal: path 'src/hooks/useChromeBridge.tsx' exists on disk, but not in 'HEAD'
+At line:1 char:276
++ ... =='; $o += (git -C 'c:\Users\admin\dilkush007\wallix-code' --no-pager ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (fatal: path 'sr...t not in 'HEAD':    String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+

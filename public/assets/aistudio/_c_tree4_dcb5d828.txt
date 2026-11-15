@@ -1,0 +1,22 @@
+﻿=== chrome-new-tab files ===
+C:\Users\admin\dilkush007\wallix-code\src\features\environments\chrome-new-tab\ChromeControlsPanel.tsx
+C:\Users\admin\dilkush007\wallix-code\src\features\environments\chrome-new-tab\ChromeNewTabPreview.tsx
+C:\Users\admin\dilkush007\wallix-code\src\features\environments\chrome-new-tab\ChromeSection.tsx
+C:\Users\admin\dilkush007\wallix-code\src\features\environments\chrome-new-tab\extensionBridge.test.ts
+C:\Users\admin\dilkush007\wallix-code\src\features\environments\chrome-new-tab\extensionBridge.ts
+C:\Users\admin\dilkush007\wallix-code\src\features\environments\chrome-new-tab\extensionIcons.ts
+C:\Users\admin\dilkush007\wallix-code\src\features\environments\chrome-new-tab\types.test.ts
+C:\Users\admin\dilkush007\wallix-code\src\features\environments\chrome-new-tab\types.ts
+C:\Users\admin\dilkush007\wallix-code\src\features\environments\chrome-new-tab\wallpaperPresets.ts
+C:\Users\admin\dilkush007\wallix-code\src\features\environments\chrome-new-tab\WeatherWidget.tsx
+=== extension dir ===
+C:\Users\admin\dilkush007\wallix-code\extension\manifest.json
+C:\Users\admin\dilkush007\wallix-code\extension\newtab.html
+C:\Users\admin\dilkush007\wallix-code\extension\newtab.js
+C:\Users\admin\dilkush007\wallix-code\extension\README.md
+C:\Users\admin\dilkush007\wallix-code\extension\samurai_spider_lily.jpg
+C:\Users\admin\dilkush007\wallix-code\extension\storage.js
+C:\Users\admin\dilkush007\wallix-code\extension\styles.css
+C:\Users\admin\dilkush007\wallix-code\extension\icons\icon128.png
+C:\Users\admin\dilkush007\wallix-code\extension\icons\icon16.png
+C:\Users\admin\dilkush007\wallix-code\extension\icons\icon48.png

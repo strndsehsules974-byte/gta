@@ -1,0 +1,12 @@
+﻿import React from 'react';
+import { Headphones, Laptop, Monitor, Check, Sparkles, Sliders, Volume2, VolumeX, ShieldAlert } from 'lucide-react';
+import { useAudioOutput, useHostEnvironment } from '../../../services/systemBridge';
+import { shellFlyoutMotion } from './shellMotion';
+import { LiquidGlassSurface, LIQUID_GLASS_TOKENS } from './LiquidGlassShellContainer';
+import { useAdaptiveMaterial } from '../adaptive';
+
+interface WindowsAudioShellSurfaceProps {
+  onClose?: () => void;
+  onOpenSettings?: () => void;
+}
+

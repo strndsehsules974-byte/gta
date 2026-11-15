@@ -1,0 +1,15 @@
+﻿=== VENV PYTHON ===
+C:\Users\admin\dilkush007\.venv\Scripts\python.exe
+3.14.6 (tags/v3.14.6:c63aec6, Jun 10 2026, 10:26:10) [MSC v.1944 64 bit (AMD64)]
+
+=== VENV PLAYWRIGHT ===
+C:\Users\admin\dilkush007\.venv\Lib\site-packages\playwright\__init__.py
+
+=== VENV PLAYWRIGHT VERSION ===
+C:\Users\admin\dilkush007\.venv\Lib\site-packages\playwright\__init__.py
+
+=== WHICH PYTHON (PATH) ===
+C:\Users\admin\dilkush007\.venv\Scripts\python.exe
+=== SCRIPT SEARCH ===
+C:\Users\admin\dilkush007\wallix-code\smart_pinterest_agent.py
+

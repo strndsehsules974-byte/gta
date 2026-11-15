@@ -1,0 +1,49 @@
+﻿=== OOM HITS in root *.txt (last 3 days) ===
+=== OOM HITS in wallix-code *.txt (last 3 days) ===
+=== RECENT FILES (root, last 24h) ===
+_git1.txt | 17759 | 10/17/2026 13:22:02
+_recovery2.ps1 | 1722 | 10/17/2026 13:20:40
+_recovery1.ps1 | 959 | 10/17/2026 13:20:36
+_e2e_probe.py | 3064 | 10/17/2026 13:13:51
+_e2e_files.txt | 174 | 10/17/2026 13:11:19
+_e2e_run.log | 975 | 10/17/2026 13:09:40
+_e2e_pid.txt | 7 | 10/17/2026 13:09:32
+_e2e_run.err | 0 | 10/17/2026 13:09:32
+_e2e_pins.txt | 192 | 10/17/2026 13:06:35
+_e2e_net.txt | 57 | 10/17/2026 13:03:45
+_e2e_state.txt | 618 | 10/17/2026 13:03:34
+_e2e_help.txt | 1287 | 10/17/2026 13:00:16
+_e2e_recon2.txt | 1997 | 10/17/2026 13:00:14
+_e2e_recon.txt | 540 | 10/17/2026 12:59:36
+read_lines.py | 367 | 10/16/2026 13:54:03
+
+=== RECENT FILES (wallix-code, last 24h) ===
+client_inbox.json | 3996 | 10/17/2026 13:09:40
+seen_pins.json | 292 | 10/17/2026 13:09:40
+pin_states.json | 497 | 10/17/2026 13:09:40
+agent_brain.json | 1171 | 10/17/2026 13:09:40
+wallix_live_pin_fix.ipynb | 1599 | 10/17/2026 02:53:03
+smart_pinterest_agent.py | 43856 | 10/17/2026 02:45:10
+check_patch.py | 434 | 10/17/2026 02:39:32
+livecheck.log | 854 | 10/17/2026 02:30:14
+test_output.txt | 4720 | 10/17/2026 01:45:51
+page_final.html | 1558 | 10/17/2026 01:00:02
+parallel_multi_agent.py | 31995 | 10/16/2026 19:32:05
+.gitignore | 1174 | 10/16/2026 19:32:05
+page2.html | 1558 | 10/16/2026 17:08:23
+vitest_task1_err.log | 0 | 10/16/2026 17:05:55
+vitest_task1.log | 0 | 10/16/2026 17:05:55
+vitest_out.txt | 19546 | 10/16/2026 17:01:42
+page_dump.html | 1558 | 10/16/2026 16:55:58
+package-lock.json | 212387 | 10/16/2026 16:08:42
+vitest-run.txt | 2085 | 10/16/2026 15:50:09
+build-output.txt | 1851 | 10/16/2026 15:48:05
+tsc-output3.txt | 9776 | 10/16/2026 15:47:17
+tsc-output2.txt | 11680 | 10/16/2026 15:45:23
+tsc-output.txt | 0 | 10/16/2026 15:44:51
+video_quality.py | 13396 | 10/16/2026 13:59:58
+setup_and_run.bat | 1038 | 10/16/2026 13:47:16
+apply_patch4.py | 2154 | 10/16/2026 13:24:53
+apply_patch3.py | 828 | 10/16/2026 13:23:32
+apply_patch2.py | 632 | 10/16/2026 13:22:52
+

@@ -1,0 +1,278 @@
+﻿=== STATUS wallix-code full ===
+ M .env.example
+ M .gitignore
+ M AGENTS.md
+ M extension/manifest.json
+ M extension/newtab.html
+ M extension/newtab.js
+ M extension/storage.js
+ M extension/styles.css
+ M p1.txt
+ M package-lock.json
+ M package.json
+ M server.ts
+ M src/App.tsx
+ M src/components/ChromeExtensionModal.tsx
+ M src/components/ChromeExtensionStudioView.tsx
+ M src/components/CollectionsView.tsx
+ M src/components/DesktopSimulatorModal.tsx
+ M src/components/HeroCarousel.tsx
+ M src/components/HomeDashboardView.tsx
+ M src/components/LiveWallpaperStudioView.tsx
+ M src/components/LiveWallpapersView.tsx
+ M src/components/SearchView.tsx
+ M src/components/Sidebar.tsx
+ M src/components/TargetWorkspaces/WindowsTargetWorkspace.tsx
+ D src/components/TargetWorkspaces/windows/WindowsAppWindow.tsx
+ D src/components/TargetWorkspaces/windows/WindowsCustomizationSidebar.tsx
+ D src/components/TargetWorkspaces/windows/WindowsDesktopCanvas.tsx
+ D src/components/TargetWorkspaces/windows/WindowsTaskbar.tsx
+ D src/components/TargetWorkspaces/windows/WindowsTopSystemBar.tsx
+ D src/components/TargetWorkspaces/windows/WindowsTrayFlyouts.tsx
+ D src/components/TargetWorkspaces/windows/types.ts
+ M src/components/Upload/ContextualUploader.tsx
+ M src/components/Upload/UploadZone.tsx
+ M src/components/WallpaperCard.tsx
+ M src/components/WallpaperGrid.tsx
+ M src/components/WallpaperModal.tsx
+ M src/components/common/WallpaperMedia.tsx
+ M src/components/topbar/TopBar.tsx
+ M src/components/topbar/actionCenter/WindowsActionCenterFlyout.tsx
+ M src/components/topbar/actionCenter/WindowsNetworkFlyout.tsx
+ M src/components/topbar/actionCenter/WindowsQuickActionTile.tsx
+ M src/desktop/backgroundEngine.ts
+ M src/index.css
+ M src/modules/chrome/ChromeControlsPanel.tsx
+ M src/modules/chrome/ChromeNewTabPreview.tsx
+ D src/modules/chrome/ChromeSection.tsx
+ D src/modules/chrome/WeatherWidget.tsx
+ M src/modules/chrome/extensionBridge.ts
+ M src/modules/chrome/types.ts
+ D src/modules/chrome/wallpaperPresets.ts
+ D src/modules/desktop/shell/DesktopShellSurfaceController.tsx
+ D src/modules/desktop/shell/LiquidGlassShellContainer.tsx
+ D src/modules/desktop/shell/WindowsActionCenterShellSurface.tsx
+ D src/modules/desktop/shell/WindowsAudioShellSurface.tsx
+ D src/modules/desktop/shell/WindowsCalendarShellSurface.tsx
+ D src/modules/desktop/shell/WindowsNetworkShellSurface.tsx
+ D src/modules/desktop/shell/WindowsPowerShellSurface.tsx
+ D src/modules/desktop/shell/WindowsQuickSettingsShellSurface.tsx
+ D src/modules/desktop/shell/WindowsSearchShellSurface.tsx
+ D src/modules/desktop/shell/index.ts
+ D src/modules/desktop/shell/shellMotion.ts
+ D src/modules/desktop/shell/shellSurfaceTypes.ts
+ M src/modules/wallpaper/WallpaperSection.tsx
+ M src/server/connector/discovery.ts
+ M src/server/connector/nativeAppBridge.ts
+ M src/server/connector/router.ts
+ M src/server/connector/security.ts
+ M src/server/connector/types.ts
+ M src/services/validation/__tests__/fixtures.ts
+ M src/services/validation/__tests__/qualityGate.test.ts
+ M src/services/validation/aspectRatioValidation.ts
+ M src/services/validation/corruptionCheck.ts
+ M src/services/validation/ffmpegBin.ts
+ M src/services/validation/resolutionValidation.ts
+ M src/services/validation/rotationNormalizer.ts
+ M src/services/validation/thumbnailValidation.ts
+ M src/services/validation/watermarkDetection.ts
+ M src/services/wallpapers/supabaseWallpaperService.ts
+ M src/services/weather/index.ts
+ M src/types.ts
+ M src/types/theme.ts
+ M src/utils/extensionZipExporter.ts
+ M src/utils/galleryDedup.ts
+ M src/utils/mediaType.ts
+ M src/vite-env.d.ts
+ M tests/validation.test.ts
+ M tsconfig.json
+ M v1.txt
+ M vite.config.ts
+ M vitest.config.ts
+?? .vscode/
+?? FILE_LIST_CATEGORIZED.txt
+?? QUALITY_AUDIT_REPORT.md
+?? README.md
+?? WALLIX_MASTER_BLUEPRINT.md
+?? __pycache__/
+?? _check_downloads.py
+?? _check_seen.py
+?? _hero-dom.html
+?? _patch10.py
+?? _patch3.py
+?? _patch5.py
+?? _patch6.py
+?? _patch7.py
+?? _patch8.py
+?? _patch9.py
+?? _read_output.py
+?? _read_output10.py
+?? _read_output2.py
+?? _read_output3.py
+?? _read_output4.py
+?? _read_output5.py
+?? _read_output6.py
+?? _read_output7.py
+?? _read_output8.py
+?? _read_output9.py
+?? _run_output.txt
+?? _run_output10.txt
+?? _run_output11.txt
+?? _run_output2.txt
+?? _run_output4.txt
+?? _run_output5.txt
+?? _run_output6.txt
+?? _run_output7.txt
+?? _run_output8.txt
+?? _run_output9.txt
+?? _test_dl.py
+?? _test_edit.py
+?? _test_gallerydl.py
+?? _test_gdl_board.py
+?? _test_gdl_board_dl.py
+?? _test_gdl_structure.py
+?? _test_yt_long.py
+?? _test_ytdlp.py
+?? _ui-dom.html
+?? _verify.py
+?? _verify2.py
+?? _verify3.py
+?? _verify4.py
+?? add_resolve_pin.py
+?? agent_brain.json
+?? agent_status.json
+?? agent_uploader.py
+?? apply-migration-api.mjs
+?? apply-migration.mjs
+?? apply_patch.py
+?? apply_patch2.py
+?? apply_patch3.py
+?? apply_patch4.py
+?? autonomous_client_commander.py
+?? build-log.txt
+?? build-output.txt
+?? check-schema.mjs
+?? check_patch.py
+?? client_inbox.json
+?? ct.txt
+?? ct2.txt
+?? ct3.txt
+?? docs/
+?? downloads/
+?? extension/icons/
+?? extensions/
+?? fix_exit.py
+?? fix_login.py
+?? gdl_out.txt
+?? gdl_probe.json
+?? newtab.html
+?? notify.json
+?? page2.html
+?? page_dump.html
+?? page_final.html
+?? panic_mode_client.py
+?? parallel_multi_agent.playwright_backup.py
+?? parallel_multi_agent.py
+?? pin_states.json
+?? probe_pinterest_api.py
+?? profile-pipeline.ts
+?? public/wallpapers/
+?? receiver_agent.py
+?? rejected_pins.json
+?? run-migration-check.ts
+?? run-migration.ts
+?? scan3.txt
+?? scripts/
+?? seen_pins.json
+?? setup_and_run.bat
+?? smart_pinterest_agent.py
+?? smart_run_log.txt
+?? smart_run_log2.txt
+?? smart_run_log3.txt
+?? smart_run_log4.txt
+?? src/components/AutomatedThemeInstallModal.tsx
+?? src/components/Dock.tsx
+?? src/components/ResetThemeConfirmModal.tsx
+?? src/components/Toast.tsx
+?? src/components/WeatherWidget.tsx
+?? src/components/glassWidgets.adapters.ts
+?? src/components/ui/
+?? src/config/features.config.ts
+?? src/data/localWallpapers.ts
+?? src/data/mediaRegistry.json
+?? src/data/mock/
+?? src/features/
+?? src/hooks/
+?? src/newtab.tsx
+?? src/newtab/
+?? src/server/connector/supabaseWallpaper.ts
+?? src/server/connector/uploadRouter.ts
+?? src/server/connector/validationSchemas.ts
+?? src/server/httpsSetup.ts
+?? src/services/themeEngineService.ts
+?? src/services/weather/useWeatherSnapshot.ts
+?? src/services/weather/weatherSnapshot.test.ts
+?? src/services/weather/weatherSnapshot.ts
+?? src/vite-config.test.ts
+?? src/workspace/
+?? start-dev.bat
+?? start-dev.ps1
+?? tasks.md
+?? test_output.txt
+?? tests/__pycache__/
+?? tests/test_agent_pipeline.py
+?? ts-error-test.txt
+?? ts-errors2.txt
+?? ts-errors3.txt
+?? ts-errors4.txt
+?? tsc-out.txt
+?? tsc-output.txt
+?? tsc-output2.txt
+?? tsc-output3.txt
+?? verify_log.txt
+?? verify_log2.txt
+?? video_quality.py
+?? vitest-bridge.txt
+?? vitest-exit.txt
+?? vitest-output.txt
+?? vitest-result.json
+?? vitest-run.txt
+?? vitest_out.txt
+?? wallix_live_pin_fix.ipynb
+?? wallix_secure_vault/
+
+=== tracked? smart_pinterest_agent.py ===
+git : error: pathspec 'smart_pinterest_agent.py' did not match any file(s) known to git
+At C:\Users\admin\dilkush007\_recovery3.ps1:5 char:10
++ $out += (git -C wallix-code ls-files --error-unmatch smart_pinterest_ ...
++          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (error: pathspec...s) known to git:String) 
+    [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Did you forget to 'git add'?
+
+=== tracked? tests ===
+tests/validation.test.ts
+
+=== tests dir listing ===
+test_agent_pipeline.py | 20061 | 10/17/2026 02:45:10
+validation.test.ts | 11136 | 10/02/2026 02:59:17
+
+=== grep resolver/media in tests ===
+test_agent_pipeline.py:147: class TestPinMediaResolver:
+test_agent_pipeline.py:148: """Pin page HTML must yield usable video or image media URLs, even when the DOM is sparse."""
+test_agent_pipeline.py:150: def test_resolve_pin_media_from_html_valid_video(self):
+test_agent_pipeline.py:158: info = sp.resolve_pin_media_from_html(html)
+test_agent_pipeline.py:163: def test_resolve_pin_media_from_html_missing_media(self):
+test_agent_pipeline.py:165: info = sp.resolve_pin_media_from_html(html)
+test_agent_pipeline.py:170: def test_resolve_pin_media_from_html_invalid_response(self):
+test_agent_pipeline.py:172: info = sp.resolve_pin_media_from_html(html)
+test_agent_pipeline.py:175: def test_resolve_pin_media_from_html_alt_image_structure(self):
+test_agent_pipeline.py:181: info = sp.resolve_pin_media_from_html(html)
+test_agent_pipeline.py:185: def test_resolve_pin_media_browser_fallback_for_hls(self, monkeypatch):
+test_agent_pipeline.py:200: monkeypatch.setattr(sp, "_resolve_pin_media_with_browser", fake_browser_resolve)
+test_agent_pipeline.py:201: info = sp.resolve_pin_media("https://www.pinterest.com/pin/123456789/")
+=== grep resolver/media in wallix-code root py ===
+smart_pinterest_agent.py:448: def _resolve_pin_media_with_browser(pin_url: str) -> dict:
+smart_pinterest_agent.py:524: browser_info = _resolve_pin_media_with_browser(pin_url)

@@ -1,0 +1,10 @@
+﻿newtab.js|100|const WEATHER_CACHE_KEY = 'wallix_live_weather_cache';
+newtab.js|644|    if (changes.wallix_chrome_newtab_settings || changes.wallix_chrome_settings) {
+newtab.js|645|      const newSettings = changes.wallix_chrome_newtab_settings?.newValue || changes.wallix_chrome_settings?.newValue;
+newtab.js|658|  if (e.key === 'wallix_chrome_newtab_settings' && e.newValue) {
+storage.js|2|const STORAGE_KEY = 'wallix_chrome_newtab_settings';
+storage.js|3|const SHORTCUTS_KEY = 'wallix_chrome_newtab_shortcuts';
+storage.js|72|      chrome.storage.local.get([STORAGE_KEY, SHORTCUTS_KEY, 'wallix_chrome_settings'], (result) => {
+storage.js|73|        const raw = result[STORAGE_KEY] || result['wallix_chrome_settings'];
+storage.js|101|        wallix_extension_active: true,
+storage.js|102|        wallix_last_synced: new Date().toISOString()

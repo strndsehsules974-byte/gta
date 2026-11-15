@@ -1,0 +1,62 @@
+﻿=== HEAD WindowsActionCenterFlyout imports ===
+import React, { useEffect, useMemo } from 'react';
+import { motion, AnimatePresence } from 'motion/react';
+import { useWindowsNotifications, NotificationItem } from '../../../services/systemBridge';
+import { WindowsNotificationGroup } from './WindowsNotificationGroup';
+import { WindowsQuickActionGrid } from './WindowsQuickActionGrid';
+import { WindowsBrightnessSlider } from './WindowsBrightnessSlider';
+import { LiquidGlassSurface } from '../../../modules/desktop/shell/LiquidGlassShellContainer';
+import { useAdaptiveMaterial } from '../../../modules/desktop/adaptive';
+import { shellSideDockMotion } from '../../../modules/desktop/shell/shellMotion';
+
+export interface WindowsActionCenterFlyoutProps {
+  onClose?: () => void;
+=== HEAD WindowsNetworkFlyout imports ===
+import React, { useState } from 'react';
+import { motion } from 'motion/react';
+import { 
+  Wifi, 
+  Lock, 
+  SignalHigh, 
+  SignalMedium, 
+  SignalLow, 
+  Plane, 
+  Smartphone,
+  RefreshCw,
+  Sliders,
+  Check
+} from 'lucide-react';
+import { useNetworkStatus, useQuickSettings, NearbyNetworkItem, SignalLevel } from '../../../services/systemBridge';
+import { LiquidGlassSurface, LIQUID_GLASS_TOKENS } from '../../../modules/desktop/shell/LiquidGlassShellContainer';
+import { useAdaptiveMaterial } from '../../../modules/desktop/adaptive';
+
+export interface WindowsNetworkFlyoutProps {
+  onClose?: () => void;
+=== HEAD WindowsQuickActionTile imports ===
+import React from 'react';
+import { LIQUID_GLASS_TOKENS } from '../../../modules/desktop/shell/LiquidGlassShellContainer';
+import { useAdaptiveMaterial } from '../../../modules/desktop/adaptive';
+
+export interface WindowsQuickActionTileProps {
+  id: string;
+=== HEAD src/modules/desktop/shell/WindowsAudioShellSurface imports ===
+import React from 'react';
+import { Headphones, Laptop, Monitor, Check, Sparkles, Sliders, Volume2, VolumeX, ShieldAlert } from 'lucide-react';
+import { useAudioOutput, useHostEnvironment } from '../../../services/systemBridge';
+import { shellFlyoutMotion } from './shellMotion';
+import { LiquidGlassSurface, LIQUID_GLASS_TOKENS } from './LiquidGlassShellContainer';
+import { useAdaptiveMaterial } from '../adaptive';
+
+interface WindowsAudioShellSurfaceProps {
+=== HEAD src/modules/desktop/shell/WindowsNetworkShellSurface ===
+import React from 'react';
+import { WindowsNetworkFlyout, WindowsNetworkFlyoutProps } from '../../../components/topbar/actionCenter/WindowsNetworkFlyout';
+
+export interface WindowsNetworkShellSurfaceProps extends WindowsNetworkFlyoutProps {}
+
+export const WindowsNetworkShellSurface: React.FC<WindowsNetworkShellSurfaceProps> = (props) => {
+  return <WindowsNetworkFlyout {...props} />;
+};
+
+export default WindowsNetworkShellSurface;
+

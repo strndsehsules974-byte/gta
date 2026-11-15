@@ -1,0 +1,41 @@
+﻿=== systemBridge dir ===
+contracts.ts
+HostBridgeService.ts
+index.ts
+SystemBridgeContext.tsx
+types.ts
+HostAdapter.ts
+MockDevelopmentAdapter.ts
+WebOnlyHostAdapter.ts
+WindowsHostBridgeAdapter.ts
+
+=== exports in SystemBridgeContext ===
+export const SystemBridgeProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+export const useSystemBridge = (): SystemBridgeContextType => {
+
+=== modules/desktop/adaptive ===
+AdaptiveMaterialEngine.ts
+AdaptiveMaterialProvider.tsx
+adaptiveMaterialSmoothing.ts
+adaptiveMaterialTokens.ts
+adaptiveMaterialTypes.ts
+adaptiveMaterialUtils.ts
+index.ts
+useAdaptiveMaterial.ts
+WallpaperAnalysisCache.ts
+wallpaperAnalysisTypes.ts
+WallpaperAnalyzer.ts
+
+=== topbar dir ===
+index.ts
+SpotlightModal.jsx
+SpotlightModal.tsx
+TopBar.jsx
+TopBar.tsx
+
+=== common dir ===
+LivePreviewErrorBoundary.tsx
+RuntimeSyncIndicator.tsx
+WallpaperMedia.tsx
+WallpaperThumb.tsx
+

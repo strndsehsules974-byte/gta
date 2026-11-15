@@ -1,0 +1,10 @@
+﻿C:\Users\admin\dilkush007\wallix-code\src\features\environments\chrome-new-tab\ChromeControlsPanel.tsx
+C:\Users\admin\dilkush007\wallix-code\src\features\environments\chrome-new-tab\ChromeNewTabPreview.tsx
+C:\Users\admin\dilkush007\wallix-code\src\features\environments\chrome-new-tab\ChromeSection.tsx
+C:\Users\admin\dilkush007\wallix-code\src\features\environments\chrome-new-tab\extensionBridge.test.ts
+C:\Users\admin\dilkush007\wallix-code\src\features\environments\chrome-new-tab\extensionBridge.ts
+C:\Users\admin\dilkush007\wallix-code\src\features\environments\chrome-new-tab\extensionIcons.ts
+C:\Users\admin\dilkush007\wallix-code\src\features\environments\chrome-new-tab\types.test.ts
+C:\Users\admin\dilkush007\wallix-code\src\features\environments\chrome-new-tab\types.ts
+C:\Users\admin\dilkush007\wallix-code\src\features\environments\chrome-new-tab\wallpaperPresets.ts
+C:\Users\admin\dilkush007\wallix-code\src\features\environments\chrome-new-tab\WeatherWidget.tsx

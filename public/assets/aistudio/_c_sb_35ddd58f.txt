@@ -1,0 +1,85 @@
+﻿=== src/services/systemBridge dir ===
+src\services\systemBridge\contracts.ts
+src\services\systemBridge\HostBridgeService.ts
+src\services\systemBridge\index.ts
+src\services\systemBridge\SystemBridgeContext.tsx
+src\services\systemBridge\types.ts
+src\services\systemBridge\adapters\HostAdapter.ts
+src\services\systemBridge\adapters\MockDevelopmentAdapter.ts
+src\services\systemBridge\adapters\WebOnlyHostAdapter.ts
+src\services\systemBridge\adapters\WindowsHostBridgeAdapter.ts
+=== src/services tree ===
+src\services\themeEngineService.ts
+src\services\nativeApp\AppDiscoveryService.ts
+src\services\nativeApp\AppNormalizer.ts
+src\services\nativeApp\storage.ts
+src\services\systemBridge\contracts.ts
+src\services\systemBridge\HostBridgeService.ts
+src\services\systemBridge\index.ts
+src\services\systemBridge\SystemBridgeContext.tsx
+src\services\systemBridge\types.ts
+src\services\systemBridge\adapters\HostAdapter.ts
+src\services\systemBridge\adapters\MockDevelopmentAdapter.ts
+src\services\systemBridge\adapters\WebOnlyHostAdapter.ts
+src\services\systemBridge\adapters\WindowsHostBridgeAdapter.ts
+src\services\validation\aspectRatioValidation.ts
+src\services\validation\blackFrameDetection.ts
+src\services\validation\corruptionCheck.ts
+src\services\validation\databaseSchema.ts
+src\services\validation\detectorIntegration.ts
+src\services\validation\duplicateDetection.ts
+src\services\validation\ffmpegBin.ts
+src\services\validation\frameAnalysis.ts
+src\services\validation\index.ts
+src\services\validation\mediaProbe.ts
+src\services\validation\mediaValidationTypes.ts
+src\services\validation\orientationValidation.ts
+src\services\validation\qualityGate.ts
+src\services\validation\quarantineWorkflow.ts
+src\services\validation\rejectionReasons.ts
+src\services\validation\resolutionValidation.ts
+src\services\validation\rotationNormalizer.ts
+src\services\validation\thumbnailValidation.ts
+src\services\validation\validationPipeline.ts
+src\services\validation\watermarkDetection.ts
+src\services\validation\__tests__\fixtures.ts
+src\services\validation\__tests__\qualityGate.test.ts
+src\services\wallpapers\supabaseWallpaperService.ts
+src\services\weather\index.ts
+src\services\weather\useWeatherSnapshot.ts
+src\services\weather\WeatherContext.tsx
+src\services\weather\weatherSnapshot.test.ts
+src\services\weather\weatherSnapshot.ts
+src\services\weather\weatherTypes.ts
+=== hooks: useAudioOutput/useHostEnvironment/useWindowsNotifications/useNetworkStatus/useQuickSettings ===
+src\services\systemBridge\index.ts:12: export const useHostEnvironment = () => {
+src\services\systemBridge\index.ts:44: export const useNetworkStatus = () => {
+src\services\systemBridge\index.ts:84: export const useAudioOutput = () => {
+src\services\systemBridge\index.ts:152: export const useQuickSettings = () => {
+src\services\systemBridge\index.ts:175: export const useWindowsNotifications = () => {
+=== vite config ===
+import tailwindcss from "@tailwindcss/vite";
+import react from "@vitejs/plugin-react";
+import path from "node:path";
+import { defineConfig } from "vite";
+
+export default defineConfig(() => {
+  return {
+    base: "./",
+    plugins: [react(), tailwindcss()],
+    resolve: {
+      alias: {
+        "@": path.resolve(__dirname, "./src"),
+      },
+    },
+    server: {
+      host: "127.0.0.1",
+      port: 3000,
+      strictPort: true,
+      open: true
+    },
+    hmr: process.env.DISABLE_HMR !== "true",
+    watch: process.env.DISABLE_HMR === "true" ? null : {},
+  };
+});
+

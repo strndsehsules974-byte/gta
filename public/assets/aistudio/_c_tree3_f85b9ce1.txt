@@ -1,0 +1,8 @@
+﻿=== modules/chrome ===
+C:\Users\admin\dilkush007\wallix-code\src\modules\chrome\ChromeControlsPanel.tsx
+C:\Users\admin\dilkush007\wallix-code\src\modules\chrome\ChromeNewTabPreview.tsx
+C:\Users\admin\dilkush007\wallix-code\src\modules\chrome\extensionBridge.ts
+C:\Users\admin\dilkush007\wallix-code\src\modules\chrome\GlassSurface.tsx
+C:\Users\admin\dilkush007\wallix-code\src\modules\chrome\types.ts
+=== hooks ===
+C:\Users\admin\dilkush007\wallix-code\src\hooks\useChromeBridge.tsx

@@ -1,0 +1,9 @@
+﻿src\components\ArcCarouselLanding.tsx:7: interface ArcCarouselLandingProps {
+src\components\ArcCarouselLanding.tsx:13: export const ArcCarouselLanding: React.FC<ArcCarouselLandingProps> = ({
+src\components\Navbar.tsx:18: onOpenLanding: () => void;
+src\components\Navbar.tsx:35: onOpenLanding,
+src\components\Navbar.tsx:92: onClick={onOpenLanding}
+src\components\Navbar.tsx:94: title="WALLIX APP — Return to 3D Arc Landing"
+src\App.tsx:20: import { ArcCarouselLanding } from './components/ArcCarouselLanding';
+src\App.tsx:1206: onOpenLanding={() => {
+src\types.ts:155: | 'landing'

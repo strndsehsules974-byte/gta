@@ -1,0 +1,8 @@
+﻿ .../TargetWorkspaces/windows/WindowsAppWindow.tsx  |  630 ------------
+ .../windows/WindowsCustomizationSidebar.tsx        | 1002 --------------------
+ .../windows/WindowsDesktopCanvas.tsx               |  409 --------
+ .../TargetWorkspaces/windows/WindowsTaskbar.tsx    |  423 ---------
+ .../windows/WindowsTopSystemBar.tsx                |   17 -
+ .../windows/WindowsTrayFlyouts.tsx                 |  387 --------
+ src/components/TargetWorkspaces/windows/types.ts   |  163 ----
+ 7 files changed, 3031 deletions(-)

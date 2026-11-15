@@ -1,0 +1,10 @@
+﻿21: export function isBridgeableWallpaperUrl(url: unknown): boolean {
+51: export async function saveChromeSettings(
+109: export function loadSavedChromeSettings(): {
+128: export function initExtensionConnectionListener(
+170: export function resolveSafeWallpaperUrl(url?: string): string {
+251: function getThemeAccentValues(accent: string) {
+333: export async function generateManifestV3Package(
+513: chrome.storage.local.get(["wallix_chrome_newtab_settings"], (result) => {
+1924: chrome.storage.local.get("wallix_chrome_newtab_settings", (data) => {
+2163: export function generateStandaloneNewTabHtml(

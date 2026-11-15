@@ -1,0 +1,17 @@
+﻿src\modules\chrome\ChromeControlsPanel.tsx
+src\modules\chrome\ChromeNewTabPreview.tsx
+src\modules\chrome\extensionBridge.ts
+src\modules\chrome\GlassSurface.tsx
+src\modules\chrome\types.ts
+src\modules\desktop\adaptive\AdaptiveMaterialEngine.ts
+src\modules\desktop\adaptive\AdaptiveMaterialProvider.tsx
+src\modules\desktop\adaptive\adaptiveMaterialSmoothing.ts
+src\modules\desktop\adaptive\adaptiveMaterialTokens.ts
+src\modules\desktop\adaptive\adaptiveMaterialTypes.ts
+src\modules\desktop\adaptive\adaptiveMaterialUtils.ts
+src\modules\desktop\adaptive\index.ts
+src\modules\desktop\adaptive\useAdaptiveMaterial.ts
+src\modules\desktop\adaptive\WallpaperAnalysisCache.ts
+src\modules\desktop\adaptive\wallpaperAnalysisTypes.ts
+src\modules\desktop\adaptive\WallpaperAnalyzer.ts
+src\modules\wallpaper\WallpaperSection.tsx

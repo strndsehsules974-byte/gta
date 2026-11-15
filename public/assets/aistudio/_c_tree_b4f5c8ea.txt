@@ -1,0 +1,33 @@
+﻿=== windows-11-customizer dirs ===
+C:\Users\admin\dilkush007\wallix-code\src\features\environments\windows-11-customizer\components
+C:\Users\admin\dilkush007\wallix-code\src\features\environments\windows-11-customizer\desktop
+C:\Users\admin\dilkush007\wallix-code\src\features\environments\windows-11-customizer\components\TargetWorkspaces
+C:\Users\admin\dilkush007\wallix-code\src\features\environments\windows-11-customizer\components\TargetWorkspaces\windows
+C:\Users\admin\dilkush007\wallix-code\src\features\environments\windows-11-customizer\desktop\shell
+=== modules/desktop files ===
+C:\Users\admin\dilkush007\wallix-code\src\modules\desktop\adaptive\AdaptiveMaterialEngine.ts
+C:\Users\admin\dilkush007\wallix-code\src\modules\desktop\adaptive\AdaptiveMaterialProvider.tsx
+C:\Users\admin\dilkush007\wallix-code\src\modules\desktop\adaptive\adaptiveMaterialSmoothing.ts
+C:\Users\admin\dilkush007\wallix-code\src\modules\desktop\adaptive\adaptiveMaterialTokens.ts
+C:\Users\admin\dilkush007\wallix-code\src\modules\desktop\adaptive\adaptiveMaterialTypes.ts
+C:\Users\admin\dilkush007\wallix-code\src\modules\desktop\adaptive\adaptiveMaterialUtils.ts
+C:\Users\admin\dilkush007\wallix-code\src\modules\desktop\adaptive\index.ts
+C:\Users\admin\dilkush007\wallix-code\src\modules\desktop\adaptive\useAdaptiveMaterial.ts
+C:\Users\admin\dilkush007\wallix-code\src\modules\desktop\adaptive\WallpaperAnalysisCache.ts
+C:\Users\admin\dilkush007\wallix-code\src\modules\desktop\adaptive\wallpaperAnalysisTypes.ts
+C:\Users\admin\dilkush007\wallix-code\src\modules\desktop\adaptive\WallpaperAnalyzer.ts
+=== services/systemBridge ===
+C:\Users\admin\dilkush007\wallix-code\src\services\systemBridge\contracts.ts
+C:\Users\admin\dilkush007\wallix-code\src\services\systemBridge\HostBridgeService.ts
+C:\Users\admin\dilkush007\wallix-code\src\services\systemBridge\index.ts
+C:\Users\admin\dilkush007\wallix-code\src\services\systemBridge\SystemBridgeContext.tsx
+C:\Users\admin\dilkush007\wallix-code\src\services\systemBridge\types.ts
+C:\Users\admin\dilkush007\wallix-code\src\services\systemBridge\adapters\HostAdapter.ts
+C:\Users\admin\dilkush007\wallix-code\src\services\systemBridge\adapters\MockDevelopmentAdapter.ts
+C:\Users\admin\dilkush007\wallix-code\src\services\systemBridge\adapters\WebOnlyHostAdapter.ts
+C:\Users\admin\dilkush007\wallix-code\src\services\systemBridge\adapters\WindowsHostBridgeAdapter.ts
+=== components/common ===
+C:\Users\admin\dilkush007\wallix-code\src\components\common\LivePreviewErrorBoundary.tsx
+C:\Users\admin\dilkush007\wallix-code\src\components\common\RuntimeSyncIndicator.tsx
+C:\Users\admin\dilkush007\wallix-code\src\components\common\WallpaperMedia.tsx
+C:\Users\admin\dilkush007\wallix-code\src\components\common\WallpaperThumb.tsx

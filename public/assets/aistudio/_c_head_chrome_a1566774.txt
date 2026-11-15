@@ -1,0 +1,9 @@
+﻿11: export const STORAGE_KEY = 'wallix_chrome_newtab_settings';
+12: export const SHORTCUTS_KEY = 'wallix_chrome_newtab_shortcuts';
+14: export interface ExtensionBridgeStatus {
+32: export async function saveChromeSettings(
+90: export function loadSavedChromeSettings(): {
+109: export function initExtensionConnectionListener(
+151: export function resolveSafeWallpaperUrl(url?: string): string {
+305: export async function generateManifestV3Package(
+2103: export function generateStandaloneNewTabHtml(

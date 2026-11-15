@@ -1,0 +1,9 @@
+﻿C:\Users\admin\dilkush007\wallix-code\src\modules\desktop\adaptive\AdaptiveMaterialEngine.ts
+C:\Users\admin\dilkush007\wallix-code\src\modules\desktop\adaptive\AdaptiveMaterialProvider.tsx
+C:\Users\admin\dilkush007\wallix-code\src\modules\desktop\adaptive\adaptiveMaterialSmoothing.ts
+C:\Users\admin\dilkush007\wallix-code\src\modules\desktop\adaptive\adaptiveMaterialTokens.ts
+C:\Users\admin\dilkush007\wallix-code\src\modules\desktop\adaptive\adaptiveMaterialTypes.ts
+C:\Users\admin\dilkush007\wallix-code\src\modules\desktop\adaptive\adaptiveMaterialUtils.ts
+C:\Users\admin\dilkush007\wallix-code\src\components\common\WallpaperThumb.tsx
+C:\Users\admin\dilkush007\wallix-code\src\components\topbar\TopBar.jsx
+C:\Users\admin\dilkush007\wallix-code\src\components\topbar\TopBar.tsx

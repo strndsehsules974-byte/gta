@@ -1,0 +1,18 @@
+﻿=== git log -S applyTheme --oneline ===
+=== git log -S openNewTab --oneline ===
+=== grep applyTheme/openNewTab in repo src+extension ===
+src\components\ChromeExtensionStudioView.tsx:318: await bridge.applyTheme(theme);
+src\components\ChromeExtensionStudioView.tsx:334: await bridge.openNewTab();
+src\components\WallpaperThemesView.tsx:20: onApplyTheme: (theme: ThemeConfig) => void;
+src\components\WallpaperThemesView.tsx:28: onApplyTheme,
+src\components\WallpaperThemesView.tsx:39: onApplyTheme(theme);
+src\features\environments\chrome-new-tab\extensionBridge.ts:540: if (message && message.type === "WALLIX_OPEN_CUSTOMIZE_PANEL") {
+src\features\environments\chrome-new-tab\extensionBridge.ts:2050: chrome.runtime.sendMessage({ type: 'WALLIX_OPEN_CUSTOMIZE_PANEL' }, (res) => {
+src\App.tsx:721: const handleApplyTheme = useCallback((theme: ThemeConfig) => {
+=== HEAD ChromeExtensionStudioView bridge usage ===
+43: import { saveChromeSettings, generateManifestV3Package, resolveSafeWallpaperUrl } from '../modules/chrome/extensionBridge';
+=== current src/modules/chrome/types.ts ===
+export * from '../../features/environments/chrome-new-tab/types';
+=== current src/modules/chrome/ChromeNewTabPreview.tsx ===
+export { ChromeNewTabPreview } from '../../features/environments/chrome-new-tab/ChromeNewTabPreview';
+

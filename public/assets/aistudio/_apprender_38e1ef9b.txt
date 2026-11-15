@@ -1,0 +1,66 @@
+﻿    if (tab === 'generator') {
+      setIsAIStudioOpen(true);
+      return;
+    }
+    if (tab === 'settings') {
+      setIsSettingsOpen(true);
+      return;
+    }
+    if (tab === 'search') {
+      setCurrentTab('search');
+      triggerSearchFocus();
+      return;
+    }
+    if (tab === 'chrome-extension') {
+      setCurrentTab('chrome-extension');
+      setIsExtensionStudioOpen(false);
+      return;
+    }
+    if (tab === 'wallpapers' || tab === 'discover') {
+      setCurrentTab('home');
+      setHomeFilterTab('All');
+      setSelectedCategory('all');
+      setTimeout(() => {
+        document.getElementById('main-wallpaper-gallery')?.scrollIntoView({ behavior: 'smooth' });
+      }, 40);
+      return;
+    }
+    if (tab === 'home') {
+      setCurrentTab('home');
+      setHomeFilterTab('All');
+      return;
+    }
+    setCurrentTab(tab);
+  };
+
+  const handleSelectHomeFilter = (filter: 'All' | '3D' | 'Live' | '4K' | '8K' | 'Cyber' | 'Anime' | 'Nature' | 'Space') => {
+    setCurrentTab('home');
+    setHomeFilterTab(filter);
+    setTimeout(() => {
+      document.getElementById('main-wallpaper-gallery')?.scrollIntoView({ behavior: 'smooth' });
+    }, 40);
+  };
+
+  const [selectedIconId, setSelectedIconId] = useState<string | null>(null);
+
+  return (
+    <AdaptiveMaterialProvider 
+      wallpaper={activeWallpaper}
+      activeWallpaperUrl={getWallpaperStillImageUrl(activeWallpaper) || ''}
+      activeWallpaperId={activeWallpaper?.id}
+    >
+      <WeatherProvider>
+        <div className="h-screen w-screen max-h-screen max-w-screen overflow-hidden fixed inset-0 bg-[#07090E] text-slate-100 flex flex-col font-['Plus_Jakarta_Sans',sans-serif]">
+        {/* 1. TOP GLOBAL APPLICATION NAVBAR */}
+      <Navbar
+        onOpenLanding={() => {
+          setCurrentTab('home');
+        }}
+        onOpenStudio={() => setIsAIStudioOpen(true)}
+        onOpenExtensionStudio={() => setIsExtensionStudioOpen(true)}
+        searchQuery={searchQuery}
+        onSearchChange={setSearchQuery}
+        isGpuSaverActive={isGpuSaverActive}
+        onToggleGpuSaver={handleToggleGpuSaver}
+        isSearchHighlighted={isSearchHighlighted}
+        onShowToast={(msg) => showToast(msg.title, msg.subtitle, msg.icon)}

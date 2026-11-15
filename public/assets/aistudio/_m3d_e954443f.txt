@@ -1,0 +1,32 @@
+﻿
+    loader.load(
+      modelUrl,
+      (gltf) => {
+        modelGroup = gltf.scene;
+
+        // Auto-center and normalize scale
+        const box = new THREE.Box3().setFromObject(modelGroup);
+        const size = box.getSize(new THREE.Vector3());
+        const center = box.getCenter(new THREE.Vector3());
+
+        const maxDim = Math.max(size.x, size.y, size.z);
+        const scale = (2.2 / (maxDim || 1)) * scaleMultiplier;
+        modelGroup.scale.setScalar(scale);
+
+        // Center on origin
+        modelGroup.position.x = -center.x * scale;
+        modelGroup.position.y = -center.y * scale;
+        modelGroup.position.z = -center.z * scale;
+
+        // Apply wireframe or custom material props if needed
+        modelGroup.traverse((child) => {
+          if ((child as THREE.Mesh).isMesh) {
+            const mesh = child as THREE.Mesh;
+            mesh.castShadow = true;
+            mesh.receiveShadow = true;
+            if (enableWireframe && mesh.material) {
+              if (Array.isArray(mesh.material)) {
+                mesh.material.forEach((m) => {
+                  if ('wireframe' in m) {
+                    (m as unknown as { wireframe: boolean }).wireframe = true;
+                  }

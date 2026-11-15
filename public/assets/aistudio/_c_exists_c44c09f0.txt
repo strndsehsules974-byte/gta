@@ -1,0 +1,5 @@
+﻿EXISTS  src\components\common\WallpaperThumb.tsx
+EXISTS  src\modules\desktop\adaptive\index.ts
+EXISTS  src\services\systemBridge\index.ts
+EXISTS  src\components\topbar\TopBar.tsx
+EXISTS  src\features\environments\windows-11-customizer\components\TargetWorkspaces\windows\types.ts

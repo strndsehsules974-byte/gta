@@ -1,0 +1,137 @@
+﻿      const stars = new THREE.Points(starGeo, starMat);
+      scene.add(stars);
+
+      let clock = 0;
+      const animate = () => {
+        clock += 0.015 * speedMultiplier;
+        gridHelper.position.z = (clock * 1.5) % 1;
+        stars.rotation.y = clock * 0.05;
+        sun.position.y = 0.5 + Math.sin(clock * 0.5) * 0.05;
+      };
+      cleanups.push(() => animate());
+    } else if (shaderType === 'cosmic-nebula') {
+      // Swirling galaxy particles
+      const particleCount = 1200;
+      const geo = new THREE.BufferGeometry();
+      const positions = new Float32Array(particleCount * 3);
+      const colors = new Float32Array(particleCount * 3);
+
+      const color1 = new THREE.Color('#3B82F6');
+      const color2 = new THREE.Color('#8B5CF6');
+      const color3 = new THREE.Color('#06B6D4');
+
+      for (let i = 0; i < particleCount; i++) {
+        const radius = Math.random() * 4 + 0.2;
+        const spinAngle = radius * 3;
+        const branchAngle = ((i % 3) * (2 * Math.PI)) / 3;
+
+        const x = Math.cos(branchAngle + spinAngle) * radius + (Math.random() - 0.5) * 0.5;
+        const y = (Math.random() - 0.5) * 0.8;
+        const z = Math.sin(branchAngle + spinAngle) * radius + (Math.random() - 0.5) * 0.5;
+
+        positions[i * 3] = x;
+        positions[i * 3 + 1] = y;
+        positions[i * 3 + 2] = z;
+
+        const mixedColor = color1.clone().lerp(i % 2 === 0 ? color2 : color3, radius / 4);
+        colors[i * 3] = mixedColor.r;
+        colors[i * 3 + 1] = mixedColor.g;
+        colors[i * 3 + 2] = mixedColor.b;
+      }
+
+      geo.setAttribute('position', new THREE.BufferAttribute(positions, 3));
+      geo.setAttribute('color', new THREE.BufferAttribute(colors, 3));
+
+      const mat = new THREE.PointsMaterial({
+        size: 0.04,
+        vertexColors: true,
+        transparent: true,
+        opacity: 0.85,
+        blending: THREE.AdditiveBlending,
+      });
+
+      const nebula = new THREE.Points(geo, mat);
+      scene.add(nebula);
+
+      let t = 0;
+      const animate = () => {
+        t += 0.005 * speedMultiplier;
+        nebula.rotation.y = t;
+        nebula.rotation.z = Math.sin(t * 0.5) * 0.1;
+      };
+      cleanups.push(() => animate());
+    } else if (shaderType === 'cyber-torus') {
+      // 3D Chrome Torus Knot + Ring
+      const torusGeo = new THREE.TorusKnotGeometry(1.2, 0.35, 128, 32, 2, 3);
+      const torusMat = new THREE.MeshStandardMaterial({
+        color: 0x8b5cf6,
+        roughness: 0.15,
+        metalness: 0.9,
+        wireframe: false,
+      });
+      const torus = new THREE.Mesh(torusGeo, torusMat);
+      scene.add(torus);
+
+      const wireGeo = new THREE.TorusGeometry(2.2, 0.04, 16, 100);
+      const wireMat = new THREE.MeshBasicMaterial({ color: 0x06b6d4, wireframe: true });
+      const ring = new THREE.Mesh(wireGeo, wireMat);
+      scene.add(ring);
+
+      const light1 = new THREE.DirectionalLight(0x06b6d4, 3);
+      light1.position.set(5, 5, 5);
+      scene.add(light1);
+
+      const light2 = new THREE.DirectionalLight(0xf43f5e, 2);
+      light2.position.set(-5, -5, -2);
+      scene.add(light2);
+      scene.add(new THREE.AmbientLight(0x312e81, 1.5));
+
+      let t = 0;
+      const animate = () => {
+        t += 0.01 * speedMultiplier;
+        torus.rotation.x = t * 0.8;
+        torus.rotation.y = t * 1.2;
+        ring.rotation.z = -t * 0.5;
+        ring.rotation.x = Math.sin(t) * 0.4;
+      };
+      cleanups.push(() => animate());
+    } else if (shaderType === 'aurora-waves') {
+      // Flowing undulating wave mesh
+      const planeGeo = new THREE.PlaneGeometry(24, 16, 64, 48);
+      const planeMat = new THREE.MeshStandardMaterial({
+        color: 0x059669,
+        wireframe: true,
+        roughness: 0.2,
+        metalness: 0.8,
+      });
+      const plane = new THREE.Mesh(planeGeo, planeMat);
+      plane.rotation.x = -Math.PI / 2.5;
+      plane.position.y = -1;
+      scene.add(plane);
+
+      const light = new THREE.PointLight(0x34d399, 4, 25);
+      light.position.set(0, 3, 2);
+      scene.add(light);
+      scene.add(new THREE.AmbientLight(0x064e3b, 2));
+
+      let t = 0;
+      const pos = planeGeo.attributes.position;
+      const animate = () => {
+        t += 0.02 * speedMultiplier;
+        for (let i = 0; i < pos.count; i++) {
+          const u = pos.getX(i);
+          const v = pos.getY(i);
+          const z = Math.sin(u * 0.4 + t) * Math.cos(v * 0.3 + t * 0.8) * 1.6;
+          pos.setZ(i, z);
+        }
+        pos.needsUpdate = true;
+        planeGeo.computeVertexNormals();
+      };
+      cleanups.push(() => animate());
+    } else {
+      // Default: Floating Polyhedron Crystal
+      const crystalGeo = new THREE.IcosahedronGeometry(1.6, 0);
+      const crystalMat = new THREE.MeshStandardMaterial({
+        color: 0x6366f1,
+        roughness: 0.1,
+        metalness: 0.95,
